@@ -1,0 +1,25 @@
+<app-nav-bar></app-nav-bar>
+
+<div class="main-container" style="position: relative; top: 60px">
+  <p>Home page works!</p>
+  <div class="search-container">
+    <form class="form-inline">
+      <input
+        id="name"
+        type="text"
+        [formControl]="search_product"
+        placeholder="Search.."
+        class="form-control"
+        style="display: inline; margin: 5px"
+      />
+      <button
+        type="button"
+        (click)="onClickSearch()"
+        class="btn btn-outline-primary"
+      >
+        <fa-icon [icon]="search_icon"></fa-icon>
+      </button>
+      <h1>Hello</h1>
+    </form>
+  </div>
+</div>

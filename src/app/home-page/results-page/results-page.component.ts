@@ -7,8 +7,8 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ResultsPageComponent implements OnInit {
 
-  resultsFetched = true;
-  @Input() results = {} // take results from parent HomePageComponent
+  // Populate the results page with api results
+  @Input() results: any; // take results from parent HomePageComponent
 
   constructor() { }
 

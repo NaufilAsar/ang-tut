@@ -23,7 +23,7 @@ import { ResultsPageComponent } from './home-page/results-page/results-page.comp
     BrowserModule,
     AppRoutingModule, FormsModule, ReactiveFormsModule,
     FontAwesomeModule,
-    NgbModule
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

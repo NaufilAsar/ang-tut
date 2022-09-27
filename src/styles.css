@@ -1,10 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root {
+  --yellow: #fdc613;
+  --lightyellow: #fdfde3;
+}
+
 body {
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
 }
-app-nav-bar {
+/* app-nav-bar {
   position: absolute;
   top: 0;
-}
+} */

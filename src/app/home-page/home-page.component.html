@@ -1,25 +1,34 @@
-<app-nav-bar></app-nav-bar>
+<!-- Display the global navbar -->
 
-<div class="main-container" style="position: relative; top: 60px">
-  <p>Home page works!</p>
-  <div class="search-container">
-    <form class="form-inline">
+<div class="main-container" style="position: relative; top: 65px">
+  <!-- <p>Home page works!</p> -->
+  <div class="search-container mt-5 pt-5">
+    <form class="form-inline d-flex justify-content-center gap-2">
       <input
         id="name"
         type="text"
         [formControl]="search_product"
         placeholder="Search.."
-        class="form-control"
-        style="display: inline; margin: 5px"
+        class="form-control text-center"
+        style="display: inline; width: 60vw"
       />
-      <button
-        type="button"
-        (click)="onClickSearch()"
-        class="btn btn-outline-primary"
-      >
+      <button type="button" (click)="onClickSearch()" class="btn btn-warning">
         <fa-icon [icon]="search_icon"></fa-icon>
       </button>
-      <h1>Hello</h1>
     </form>
   </div>
 </div>
+
+<div *ngIf="resultsLoaded" style="margin-top: 70px">
+  <app-results-page></app-results-page>
+</div>
+
+<!-- <blockquote class="blockquote text-center">
+  <p class="mb-0">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
+    erat a ante.
+  </p>
+  <footer class="blockquote-footer">
+    Someone famous in <cite title="Source Title">Source Title</cite>
+  </footer>
+</blockquote> -->

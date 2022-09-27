@@ -1,9 +1,10 @@
-a {
+/* a {
   color: #000;
 }
 
 /* header */
 
+/*
 .header {
   font-family: Helvetica, sans-serif;
   background-color: #fff;
@@ -50,7 +51,7 @@ a {
 }
 
 /* menu icon */
-
+/* 
 .header .menu-icon {
   cursor: pointer;
   display: inline-block;
@@ -89,7 +90,7 @@ a {
 }
 
 /* menu btn */
-
+/* 
 .header .menu-btn {
   display: none;
 }
@@ -116,7 +117,7 @@ a {
 }
 
 /* 48em = 768px */
-
+/* 
 @media (min-width: 48em) {
   .header li {
     float: left;
@@ -132,4 +133,17 @@ a {
   .header .menu-icon {
     display: none;
   }
+}
+*/
+.navbar-brand {
+  font-size: 1.6rem;
+  font-weight: bold;
+  font-family: "Roboto";
+}
+.navbar-nav {
+  margin: 0.2rem 0.5rem 0.2rem auto;
+}
+#categoryDropdown {
+  margin-top: 5px;
+  font-size: 0.9rem;
 }

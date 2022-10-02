@@ -1,0 +1,436 @@
+{
+  "Products": [
+    {
+      "Amazon": "true",
+      "Flipkart": "false",
+      "Reliance": "false",
+      "link": "amazon.in/Redmi-Activ-Coral-Green-Storage/dp/B09GFLFMPS",
+      "title": "Redmi 9 Activ (Coral Green, 4GB RAM, 64GB Storage)| Octa-core Helio G35 | 5000 mAh Battery",
+      "src": "https://m.media-amazon.com/images/I/91kAtEXPIeL._AC_UY218_.jpg",
+      "price": "8,099"
+    },
+    {
+      "Amazon": "true",
+      "Flipkart": "false",
+      "Reliance": "false",
+      "link": "amazon.in/Redmi-9A-Sport-Octa-core-Processor/dp/B09GFM8CGS",
+      "title": "Redmi 9A Sport (Carbon Black, 2GB RAM, 32GB Storage) | 2GHz Octa-core Helio G25 Processor | 5000 mAh Battery",
+      "src": "https://m.media-amazon.com/images/I/81T4O-rEI+L._AC_UY218_.jpg",
+      "price": "6,999"
+    },
+    {
+      "Amazon": "true",
+      "Flipkart": "false",
+      "Reliance": "false",
+      "link": "amazon.in/Redmi-Storage-Qualcomm%C2%AE-SnapdragonTM-Included/dp/B09QS9X16F",
+      "title": "Redmi Note 11 (Space Black, 6GB RAM, 64GB Storage) | 90Hz FHD+ AMOLED Display | Qualcomm® Snapdragon™ 680-6nm | Alexa Built-in | 33W Charger Included | Get 2 Months of YouTube Premium Free!",
+      "src": "https://m.media-amazon.com/images/I/71yTvU9VgdL._AC_UY218_.jpg",
+      "price": "13,999"
+    },
+    {
+      "Amazon": "true",
+      "Flipkart": "false",
+      "Reliance": "false",
+      "link": "amazon.in/Redmi-Chrome-Silver-Dimensity-5000mAh/dp/B0BBFKYH4N",
+      "title": "Redmi 11 Prime 5G (Chrome Silver, 4GB RAM 64GB ROM) | Prime Design | MTK Dimensity 700 | 50 MP Dual Cam | 5000mAh | 7 Band 5G",
+      "src": "https://m.media-amazon.com/images/I/11hfR5Cq9GL._SS200_.png",
+      "price": "12,999"
+    },
+    {
+      "Amazon": "true",
+      "Flipkart": "false",
+      "Reliance": "false",
+      "link": "amazon.in/Redmi-Storage-Qualcomm%C2%AE-SnapdragonTM-Included/dp/B09QS8V5N8",
+      "title": "Redmi Note 11 (Space Black, 4GB RAM, 64GB Storage)|90Hz FHD+ AMOLED Display | Qualcomm® Snapdragon™ 680-6nm | Alexa Built-in | 33W Charger Included | Get 2 Months of YouTube Premium Free!",
+      "src": "https://m.media-amazon.com/images/I/817vyrOUqmL._AC_UY218_.jpg",
+      "price": "12,099"
+    },
+    {
+      "Amazon": "true",
+      "Flipkart": "false",
+      "Reliance": "false",
+      "link": "amazon.in/Redmi-Storage-Battery-Finger-Booster/dp/B0B6PSPJ8N",
+      "title": "Redmi 10A Sport (Slate Grey, 6GB RAM, 128GB Storage) | 2 Ghz Octa Cor Helio G25 | 5000 mAh Battery | Finger Print Sensor | Upto 8GB RAM with RAM Booster",
+      "src": "https://m.media-amazon.com/images/I/71yTvU9VgdL._AC_UY218_.jpg",
+      "price": "9,999"
+    },
+    {
+      "Amazon": "true",
+      "Flipkart": "false",
+      "Reliance": "false",
+      "link": "amazon.in/11X-Cosmic-Black-128GB-Storage/dp/B085J1DRPG",
+      "title": "Mi 11X 5G (Cosmic Black, 8GB RAM, 128GB Storage) | SD 870 | DisplayMate A+ rated 120Hz E4 AMOLED | 48MP Sony sensor",
+      "src": "https://m.media-amazon.com/images/I/11hfR5Cq9GL._SS200_.png",
+      "price": "29,999"
+    },
+    {
+      "Amazon": "true",
+      "Flipkart": "false",
+      "Reliance": "false",
+      "link": "amazon.in/Redmi-Storage-Display-Charger-Included/dp/B09T361J53",
+      "title": "Redmi Note 11 Pro (Star Blue, 6GB RAM, 128GB Storage) | 67W Turbo Charge | 120Hz Super AMOLED Display | Charger Included | Get 2 Months of YouTube Premium Free!",
+      "src": "https://m.media-amazon.com/images/I/71t7mcs1VoL._AC_UY218_.jpg",
+      "price": "17,999"
+    },
+    {
+      "Amazon": "true",
+      "Flipkart": "false",
+      "Reliance": "false",
+      "link": "amazon.in/Redmi-9A-Sport-Octa-core-Processor/dp/B09GFLXVH9",
+      "title": "Redmi 9A Sport (Coral Green, 2GB RAM, 32GB Storage) | 2GHz Octa-core Helio G25 Processor | 5000 mAh Battery",
+      "src": "https://m.media-amazon.com/images/I/71VQXjN6R7S._AC_UY218_.jpg",
+      "price": "6,999"
+    },
+    {
+      "Amazon": "true",
+      "Flipkart": "false",
+      "Reliance": "false",
+      "link": "amazon.in/Redmi-Storage-Battery-Leather-Texture/dp/B0BBN56J5H",
+      "title": "Redmi A1 (Black, 2GB RAM, 32GB Storage) | Helio A22 | 5000 mAh Battery | 8MP AI Dual Cam | Leather Texture Design | Android 12",
+      "src": "https://m.media-amazon.com/images/I/11hfR5Cq9GL._SS200_.png",
+      "price": "6,299"
+    },
+    {
+      "Amazon": "true",
+      "Flipkart": "false",
+      "Reliance": "false",
+      "link": "amazon.in/Redmi-Flagship-Mediatek-Dimensity-Processor/dp/B0B4DWTKFC",
+      "title": "Redmi K50i 5G (Phantom Blue, 6GB RAM, 128GB Storage) | Flagship Mediatek Dimensity 8100 Processor | 144Hz Liquid FFS Display | Alexa Built-in",
+      "src": "https://m.media-amazon.com/images/I/71u-1krs2XL._AC_UY218_.jpg",
+      "price": "24,999"
+    },
+    {
+      "Amazon": "true",
+      "Flipkart": "false",
+      "Reliance": "false",
+      "link": "amazon.in/Redmi-Stealth-Storage-Charge-Display/dp/B09T2YB99G",
+      "title": "Redmi Note 11 Pro (Stealth Black, 6GB RAM, 128GB Storage) | 67W Turbo Charge | 120Hz Super AMOLED Display | Charger Included | Get 2 Months of YouTube Premium Free!",
+      "src": "https://m.media-amazon.com/images/I/810KHyQ4WcL._AC_UY218_.jpg",
+      "price": "17,999"
+    },
+    {
+      "Amazon": "true",
+      "Flipkart": "false",
+      "Reliance": "false",
+      "link": "amazon.in/Redmi-Activ-Carbon-Black-Storage/dp/B09GFP6XHG",
+      "title": "Redmi 9 Activ (Carbon Black, 6GB RAM, 128GB Storage)",
+      "src": "https://m.media-amazon.com/images/I/81BxHYjeA2L._AC_UY218_.jpg",
+      "price": "10,499"
+    },
+    {
+      "Amazon": "true",
+      "Flipkart": "false",
+      "Reliance": "false",
+      "link": "amazon.in/Redmi-Thunder-Storage-Dimensity-5000mAh/dp/B0BBFKGFQH",
+      "title": "Redmi 11 Prime 5G (Thunder Black, 6GB RAM, 128GB Storage) | Prime Design | MTK Dimensity 700 | 50 MP Dual Cam | 5000mAh | 7 Band 5G",
+      "src": "https://m.media-amazon.com/images/I/715rSRKUlLL._AC_UY218_.jpg",
+      "price": "14,999"
+    },
+    {
+      "Amazon": "true",
+      "Flipkart": "false",
+      "Reliance": "false",
+      "link": "amazon.in/Test-Exclusive-674/dp/B07HG8SBJL",
+      "title": "Xiaomi Mi A3 (Kind of Grey, 4GB RAM, 64GB Storage)",
+      "src": "https://m.media-amazon.com/images/I/717DeSsnXpL._AC_UY218_.jpg",
+      "price": "13,899"
+    },
+    {
+      "Amazon": "true",
+      "Flipkart": "false",
+      "Reliance": "false",
+      "link": "amazon.in/Test-Exclusive_2020_1128-Multi-3GB-Storage/dp/B089MVC437",
+      "title": "Mi 10i 5G (Atlantic Blue, 6GB RAM, 128GB Storage) - 108MP Quad Camera | Snapdragon 750G Processor",
+      "src": "https://m.media-amazon.com/images/I/911TJ1CDbLL._AC_UY218_.jpg",
+      "price": "23,989"
+    },
+    {
+      "Amazon": "false",
+      "Flipkart": "true",
+      "Reliance": "false",
+      "link": "https://www.flipkart.com/apple-iphone-11-black-128-gb/p/itm8244e8d955aba",
+      "title": "APPLE iPhone 11 (Black, 128 GB)",
+      "src": "https://rukminim1.flixcart.com/image/312/312/k2jbyq80pkrrdj/mobile-refurbished/x/j/s/iphone-11-128-d-mwm02hn-a-apple-0-original-imafkg242ugz8hwc.jpeg?q=70",
+      "price": "₹41,990"
+    },
+    {
+      "Amazon": "false",
+      "Flipkart": "true",
+      "Reliance": "false",
+      "link": "https://www.flipkart.com/apple-iphone-13-pink-128-gb/p/itm6e30c6ee045d2",
+      "title": "APPLE iPhone 13 (Pink, 128 GB)",
+      "src": "https://rukminim1.flixcart.com/image/312/312/ktketu80/mobile/8/z/w/iphone-13-mlph3hn-a-apple-original-imag6vzzhrxgazsg.jpeg?q=70",
+      "price": "₹59,990"
+    },
+    {
+      "Amazon": "false",
+      "Flipkart": "true",
+      "Reliance": "false",
+      "link": "https://www.flipkart.com/apple-iphone-11-white-128-gb/p/itme32df47ea6742",
+      "title": "APPLE iPhone 11 (White, 128 GB)",
+      "src": "https://rukminim1.flixcart.com/image/312/312/k2jbyq80pkrrdj/mobile-refurbished/k/y/d/iphone-11-256-u-mwm82hn-a-apple-0-original-imafkg25mhaztxns.jpeg?q=70",
+      "price": "₹42,990"
+    },
+    {
+      "Amazon": "false",
+      "Flipkart": "true",
+      "Reliance": "false",
+      "link": "https://www.flipkart.com/apple-iphone-11-white-64-gb/p/itmfc6a7091eb20b",
+      "title": "APPLE iPhone 11 (White, 64 GB)",
+      "src": "https://rukminim1.flixcart.com/image/312/312/k2jbyq80pkrrdj/mobile-refurbished/k/y/d/iphone-11-256-u-mwm82hn-a-apple-0-original-imafkg25mhaztxns.jpeg?q=70",
+      "price": "₹36,990"
+    },
+    {
+      "Amazon": "false",
+      "Flipkart": "true",
+      "Reliance": "false",
+      "link": "https://www.flipkart.com/apple-iphone-13-blue-128-gb/p/itm6c601e0a58b3c",
+      "title": "APPLE iPhone 13 (Blue, 128 GB)",
+      "src": "https://rukminim1.flixcart.com/image/312/312/ktketu80/mobile/2/y/o/iphone-13-mlpk3hn-a-apple-original-imag6vpyur6hjngg.jpeg?q=70",
+      "price": "₹58,990"
+    },
+    {
+      "Amazon": "false",
+      "Flipkart": "true",
+      "Reliance": "false",
+      "link": "https://www.flipkart.com/apple-iphone-13-starlight-128-gb/p/itmc9604f122ae7f",
+      "title": "APPLE iPhone 13 (Starlight, 128 GB)",
+      "src": "https://rukminim1.flixcart.com/image/312/312/ktketu80/mobile/6/n/d/iphone-13-mlpg3hn-a-apple-original-imag6vpyghayhhrh.jpeg?q=70",
+      "price": "₹59,990"
+    },
+    {
+      "Amazon": "false",
+      "Flipkart": "true",
+      "Reliance": "false",
+      "link": "https://www.flipkart.com/apple-iphone-11-black-64-gb/p/itm4e5041ba101fd",
+      "title": "APPLE iPhone 11 (Black, 64 GB)",
+      "src": "https://rukminim1.flixcart.com/image/312/312/k2jbyq80pkrrdj/mobile-refurbished/x/j/s/iphone-11-128-d-mwm02hn-a-apple-0-original-imafkg242ugz8hwc.jpeg?q=70",
+      "price": "₹35,990"
+    },
+    {
+      "Amazon": "false",
+      "Flipkart": "true",
+      "Reliance": "false",
+      "link": "https://www.flipkart.com/apple-iphone-11-purple-64-gb/p/itm2b8d03427ddac",
+      "title": "APPLE iPhone 11 (Purple, 64 GB)",
+      "src": "https://rukminim1.flixcart.com/image/312/312/k2jbyq80pkrrdj/mobile-refurbished/y/k/z/iphone-11-64-a-mwlx2hn-a-apple-0-original-imafkg24ymsjav9h.jpeg?q=70",
+      "price": "₹35,990"
+    },
+    {
+      "Amazon": "false",
+      "Flipkart": "true",
+      "Reliance": "false",
+      "link": "https://www.flipkart.com/apple-iphone-13-product-red-128-gb/p/itm99b5658d148b0",
+      "title": "APPLE iPhone 13 ((PRODUCT)RED, 128 GB)",
+      "src": "https://rukminim1.flixcart.com/image/312/312/ktketu80/mobile/a/m/7/iphone-13-mlpj3hn-a-apple-original-imag6vpyk3w4zarg.jpeg?q=70",
+      "price": "₹58,990"
+    },
+    {
+      "Amazon": "false",
+      "Flipkart": "true",
+      "Reliance": "false",
+      "link": "https://www.flipkart.com/apple-iphone-11-purple-128-gb/p/itmb7ca0b05522ff",
+      "title": "APPLE iPhone 11 (Purple, 128 GB)",
+      "src": "https://rukminim1.flixcart.com/image/312/312/k2jbyq80pkrrdj/mobile-refurbished/y/k/z/iphone-11-64-a-mwlx2hn-a-apple-0-original-imafkg24ymsjav9h.jpeg?q=70",
+      "price": "₹41,990"
+    },
+    {
+      "Amazon": "false",
+      "Flipkart": "true",
+      "Reliance": "false",
+      "link": "https://www.flipkart.com/apple-iphone-13-midnight-128-gb/p/itmca361aab1c5b0",
+      "title": "APPLE iPhone 13 (Midnight, 128 GB)",
+      "src": "https://rukminim1.flixcart.com/image/312/312/ktketu80/mobile/s/l/c/iphone-13-mlpf3hn-a-apple-original-imag6vzz5qvejz8z.jpeg?q=70",
+      "price": "₹58,990"
+    },
+    {
+      "Amazon": "false",
+      "Flipkart": "true",
+      "Reliance": "false",
+      "link": "https://www.flipkart.com/apple-iphone-11-red-64-gb/p/itmc3935326f2feb",
+      "title": "APPLE iPhone 11 (Red, 64 GB)",
+      "src": "https://rukminim1.flixcart.com/image/312/312/k2jbyq80pkrrdj/mobile-refurbished/q/z/g/iphone-11-128-a-mwm32hn-a-apple-0-original-imafkg25hjmuy98e.jpeg?q=70",
+      "price": "₹36,990"
+    },
+    {
+      "Amazon": "false",
+      "Flipkart": "true",
+      "Reliance": "false",
+      "link": "https://www.flipkart.com/apple-iphone-12-mini-blue-64-gb/p/itm2883104474448",
+      "title": "APPLE iPhone 12 Mini (Blue, 64 GB)",
+      "src": "https://rukminim1.flixcart.com/image/312/312/kg8avm80/mobile/s/h/f/apple-iphone-12-mini-dummyapplefsn-original-imafwgbfukehtnxv.jpeg?q=70",
+      "price": "₹39,990"
+    },
+    {
+      "Amazon": "false",
+      "Flipkart": "true",
+      "Reliance": "false",
+      "link": "https://www.flipkart.com/apple-iphone-11-red-128-gb/p/itm8d14bd0e33a1c",
+      "title": "APPLE iPhone 11 (Red, 128 GB)",
+      "src": "https://rukminim1.flixcart.com/image/312/312/k2jbyq80pkrrdj/mobile-refurbished/q/z/g/iphone-11-128-a-mwm32hn-a-apple-0-original-imafkg25hjmuy98e.jpeg?q=70",
+      "price": "₹41,990"
+    },
+    {
+      "Amazon": "false",
+      "Flipkart": "true",
+      "Reliance": "false",
+      "link": "https://www.flipkart.com/apple-iphone-12-mini-white-64-gb/p/itmf3b16d1640898",
+      "title": "APPLE iPhone 12 Mini (White, 64 GB)",
+      "src": "https://rukminim1.flixcart.com/image/312/312/kg8avm80/mobile/d/g/b/apple-iphone-12-mini-dummyapplefsn-original-imafwgbfhx4cfzue.jpeg?q=70",
+      "price": "₹38,990"
+    },
+    {
+      "Amazon": "false",
+      "Flipkart": "true",
+      "Reliance": "false",
+      "link": "https://www.flipkart.com/apple-iphone-12-mini-black-64-gb/p/itm38b727191eb08",
+      "title": "APPLE iPhone 12 Mini (Black, 64 GB)",
+      "src": "https://rukminim1.flixcart.com/image/312/312/kg8avm80/mobile/n/p/d/apple-iphone-12-mini-dummyapplefsn-original-imafwgbfwkfrerak.jpeg?q=70",
+      "price": "₹38,990"
+    },
+    {
+      "Amazon": "false",
+      "Flipkart": "false",
+      "Reliance": "true",
+      "link": "https://www.reliancedigital.in/samsung-galaxy-watch-3-sm-r845fzsains-smart-watch/p/491900882",
+      "title": "Samsung Galaxy Watch 3 SM-R845FZSAINS Smart Watch",
+      "src": "https://www.reliancedigital.in/medias/Samsung-SM-R845FZSAINS-Smart-Watch-491900882-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzNTA2NnxpbWFnZS9qcGVnfGltYWdlcy9oM2IvaDBmLzkzNjY0NzE3MDQ2MDYuanBnfDQ3MDU1YzZjNzI5NWE1ZDEzMDcwMzNhZDdjNjFiNTIyMWY5YzJjY2ZkY2NmNDEyZTIwOTg5MGU2ZDA1ZGNlMDE",
+      "price": "18,999.00"
+    },
+    {
+      "Amazon": "false",
+      "Flipkart": "false",
+      "Reliance": "true",
+      "link": "https://www.reliancedigital.in/samsung-taba8-20-31-cm-8-0-inch-2gb-32gb-lte-silver-sm-t295nzsdins/p/491900800",
+      "title": "Samsung TabA8 20.31 cm (8.0 inch) 2GB, 32GB, LTE (Silver), SM-T295NZSDINS",
+      "src": "https://www.reliancedigital.in/medias/Samsung-Tab-A8-Tablets-491900800-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMDEwOHxpbWFnZS9qcGVnfGltYWdlcy9oOTQvaGQxLzkzNjM5NzQyOTE0ODYuanBnfGVkNDUzNDJhOTliZjkwM2UyODVkN2ZjMTk3NDAzMDIyZjE5NDI1MzI1OTRkN2I2NTM3YjEwOWJjODNiZWQ1YTU",
+      "price": "11,999.00"
+    },
+    {
+      "Amazon": "false",
+      "Flipkart": "false",
+      "Reliance": "true",
+      "link": "https://www.reliancedigital.in/samsung-ta800-25w-super-fast-charging-travel-adapter-white/p/491946927",
+      "title": "Samsung TA800 25W Super Fast Charging Travel Adapter, White",
+      "src": "https://www.reliancedigital.in/medias/Samsung-EP-TA800NWEG-Chargers-and-Adapters-491946927-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxODY0N3xpbWFnZS9qcGVnfGltYWdlcy9oOWEvaGNiLzk1NjE5MDE3Mjc3NzQuanBnfDJiYTU0ZWY0NDZjNDg5OTVjMmJmNjliZmY1NTExZTVkNDYwZjE1M2RjNTI5ZjQwOGQ3YzM1NzUyZmNmNTE0YWU",
+      "price": "999.00"
+    },
+    {
+      "Amazon": "false",
+      "Flipkart": "false",
+      "Reliance": "true",
+      "link": "https://www.reliancedigital.in/samsung-108-cm-43-inch-ultra-hd-4k-led-smart-tv-7-series-43au7700/p/492166314",
+      "title": "Samsung 108 cm (43 inch) Ultra HD (4K) LED Smart TV, 7 Series 43AU7700",
+      "src": "https://www.reliancedigital.in/medias/Samsung-43AU7700-Television-492166314-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1MzMxMnxpbWFnZS9qcGVnfGltYWdlcy9oMWQvaDUwLzk1NTU4MjEwMDI3ODIuanBnfGJmODc2ZjUyNjRmMjdiZTI4YTQxM2YxMWM3MTQ2MDljYTlkMjk2NzUxNjIyOGViODk2NGM1MzE1NTE0NWI1ZjA",
+      "price": "38,990.00"
+    },
+    {
+      "Amazon": "false",
+      "Flipkart": "false",
+      "Reliance": "true",
+      "link": "https://www.reliancedigital.in/samsung-125-cm-50-inch-ultra-hd-4k-led-smart-tv-7-series-50au7700/p/492166316",
+      "title": "Samsung 125 cm (50 inch) Ultra HD (4K) LED Smart TV, 7 Series 50AU7700",
+      "src": "https://www.reliancedigital.in/medias/Samsung-50AU7700-Television-492166316-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1Mzc1MHxpbWFnZS9qcGVnfGltYWdlcy9oMzcvaDYzLzk1NTU4MjIzMTM1MDIuanBnfGQ3ZGUyZTc4YTRlYzExOWIyMTdkYzI0YWNjOGY2N2IxYmYzYTk2NzM1MjUzZTU5OTQwMzcyZWRmZGY1MzIyZjE",
+      "price": "52,990.00"
+    },
+    {
+      "Amazon": "false",
+      "Flipkart": "false",
+      "Reliance": "true",
+      "link": "https://www.reliancedigital.in/samsung-138-cm-55-inch-ultra-hd-4k-led-smart-tv-7-series-55au7700/p/492166317",
+      "title": "Samsung 138 cm (55 inch) Ultra HD (4K) LED Smart TV, 7 Series 55AU7700",
+      "src": "https://www.reliancedigital.in/medias/Samsung-55AU7700-Television-492166317-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1Mzc2MHxpbWFnZS9qcGVnfGltYWdlcy9oYzUvaDc4Lzk1NTU4MDk1MzM5ODIuanBnfGQ5MDU2YmZkOGU1MjQxNmUxZDcyNzNiMzg1MmI5YTZjZjliOTMxMTNjNWI0ZWE5MWY1ZTU0N2NkOGNiZTZkZGI",
+      "price": "61,990.00"
+    },
+    {
+      "Amazon": "false",
+      "Flipkart": "false",
+      "Reliance": "true",
+      "link": "https://www.reliancedigital.in/samsung-163-cm-65-inch-ultra-hd-4k-led-smart-tv-7-series-65au7700/p/492166318",
+      "title": "Samsung 163 cm (65 inch) Ultra HD (4K) LED Smart TV, 7 Series 65AU7700",
+      "src": "https://www.reliancedigital.in/medias/Samsung-65AU7700-Television-492166318-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1NTA4NnxpbWFnZS9qcGVnfGltYWdlcy9oZTMvaGJiLzk1NTU4MjE2NTgxNDIuanBnfDhjYjY3ZDNlMmE1YTAwMzY3MzVlODFiMDQ4ODQ4YWQyOTA2YzRlYWFmYzQxMTUyNjNhNWRkYTk5ZTRlNjI4Mjc",
+      "price": "92,990.00"
+    },
+    {
+      "Amazon": "false",
+      "Flipkart": "false",
+      "Reliance": "true",
+      "link": "https://www.reliancedigital.in/samsung-ep-ta845xwngin-45-watts-travel-adapter-white/p/491996851",
+      "title": "Samsung EP-TA845XWNGIN 45 Watts Travel Adapter, White",
+      "src": "https://www.reliancedigital.in/medias/Samsung-EP-TA845XWNGIN-Chargers-and-Adapters-491996851-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyMzM1NXxpbWFnZS9qcGVnfGltYWdlcy9oMjQvaDNjLzk1NzEzNzU4NzQwNzguanBnfDM0MmExM2RiNzA5MWQyOTQ3Y2Q3YTVlMjIwMDU0NWNkOWRjNDZlZTRlYjljMWJjZGRiOTAzNWY0MWFhNzg2Njg",
+      "price": "2,999.00"
+    },
+    {
+      "Amazon": "false",
+      "Flipkart": "false",
+      "Reliance": "true",
+      "link": "https://www.reliancedigital.in/samsung-a450-2-1-channel-soundbar/p/492338575",
+      "title": "Samsung A450 2.1 Channel Soundbar",
+      "src": "https://www.reliancedigital.in/medias/Samsung-A450-TV-Speakers-and-Soundbar-492338575-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxOTcxMHxpbWFnZS9qcGVnfGltYWdlcy9oYzAvaDYzLzk2MDkwNzM2MjMwNzAuanBnfGM1ZWEwMzZiZDIyMTAwODU3MjI1NGViMGI3YzUxMGRhYThjMTIxNWZmZDk2OGFhMjYyN2VkYzhhNWQ1MGM3MzE",
+      "price": "15,990.00"
+    },
+    {
+      "Amazon": "false",
+      "Flipkart": "false",
+      "Reliance": "true",
+      "link": "https://www.reliancedigital.in/samsung-a670-5-1-channel-soundbar/p/492338577",
+      "title": "Samsung A670 5.1 Channel Soundbar",
+      "src": "https://www.reliancedigital.in/medias/Samsung-A670-TV-Speakers-and-Soundbar-492338577-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyMTk4OHxpbWFnZS9qcGVnfGltYWdlcy9oMDUvaDViLzk2MDkwNzI5Njc3MTAuanBnfGY0ZTM0NmRhYzU0NDMzOWQzODc1ZmIzYmEyMWQ3ODE5ZDY2NTg0MmZiZjRmZTNiYzcyMjYzM2VhYjY0YzcxZDU",
+      "price": "30,990.00"
+    },
+    {
+      "Amazon": "false",
+      "Flipkart": "false",
+      "Reliance": "true",
+      "link": "https://www.reliancedigital.in/samsung-q-series-q600a-3-1-2-channel-soundbar/p/492338578",
+      "title": "Samsung Q Series Q600A 3.1.2 Channel Soundbar",
+      "src": "https://www.reliancedigital.in/medias/Samsung-Q600A-TV-Speakers-and-Soundbar-492338578-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxOTQ4N3xpbWFnZS9qcGVnfGltYWdlcy9oNzcvaGMyLzk2MDkwODA1MDQzNTAuanBnfDQzMGVjMWM1Mzg2OThiMTNjNTllOWVlYWM0YTJjM2ZlZTI5ZmY0MjExYTFlM2YwMTcwNDRhZmUwZmE4ZmI0MDg",
+      "price": "27,999.00"
+    },
+    {
+      "Amazon": "false",
+      "Flipkart": "false",
+      "Reliance": "true",
+      "link": "https://www.reliancedigital.in/samsung-galaxy-z-series-flip3-5g-128-gb-8-gb-ram-cream-mobile-phone/p/491997491",
+      "title": "Samsung Galaxy Z Series Flip3 5G 128 GB, 8 GB RAM, Cream, Mobile Phone",
+      "src": "https://www.reliancedigital.in/medias/Samsung-Galaxy-Z-Flip-3-Smartphone-491997491-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxOTQxNXxpbWFnZS9qcGVnfGltYWdlcy9oODIvaDBlLzk2MTc1MDE3NDkyNzguanBnfGZjMGQxZDAzMjY4NTU0MjZlNzJhYWY1MmEwNGYxOGFlN2JkYzZhNzIzZTFhODE0MzJmZTIxZjM4MDgxMDgwMjM",
+      "price": "84,999.00"
+    },
+    {
+      "Amazon": "false",
+      "Flipkart": "false",
+      "Reliance": "true",
+      "link": "https://www.reliancedigital.in/samsung-galaxy-z-series-flip3-5g-128-gb-8-gb-ram-phantom-black-mobile-phone/p/491997492",
+      "title": "Samsung Galaxy Z Series Flip3 5G 128 GB, 8 GB RAM, Phantom Black, Mobile Phone",
+      "src": "https://www.reliancedigital.in/medias/Samsung-Galaxy-Z-Flip-3-Smartphone-491997492-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxODEyN3xpbWFnZS9qcGVnfGltYWdlcy9oYTEvaDNiLzk2MTc1MDIwNzY5NTguanBnfDI5ZWYzZmY0ZGY5OGRmZWFiMDc4ZjAwMWE2NWZlYjRiZGFlMGE0ODMwYTBiMGIwYTRlY2YwMjVhYzFiYzIyNGQ",
+      "price": "84,999.00"
+    },
+    {
+      "Amazon": "false",
+      "Flipkart": "false",
+      "Reliance": "true",
+      "link": "https://www.reliancedigital.in/samsung-galaxy-z-series-fold3-5g-512-gb-12-gb-ram-phantom-black-mobile-phone/p/491997498",
+      "title": "Samsung Galaxy Z Series Fold3 5G 512 GB, 12 GB RAM, Phantom Black, Mobile Phone",
+      "src": "https://www.reliancedigital.in/medias/Samsung-Galaxy-Z-Fold-3-Smartphone-491997498-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyMzU3OHxpbWFnZS9qcGVnfGltYWdlcy9oNTUvaDAxLzk2MTc1MjM4MzQ5MTAuanBnfGZiODFlNjM3Yjg4N2UzYmJhNTQwYTEwZTBhOWM2ODAwZDMyYjA4ZjBjMzM2MWYwOTVmOGEzZDNiODcwMTc4NDA",
+      "price": "1,47,999.00"
+    },
+    {
+      "Amazon": "false",
+      "Flipkart": "false",
+      "Reliance": "true",
+      "link": "https://www.reliancedigital.in/samsung-galaxy-a03s-32-gb-3-gb-ram-black-mobile-phone/p/491997512",
+      "title": "Samsung Galaxy A03s 32 GB, 3 GB RAM, Black, Mobile Phone",
+      "src": "https://www.reliancedigital.in/medias/Samsung-Galaxy-A03s-Smartphone-491997512-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1NjMxNHxpbWFnZS9qcGVnfGltYWdlcy9oZDYvaDljLzk2MjM1ODE4MTg5MTAuanBnfDdhYWNlYTIzNWJlMTU2Mzk0ZWUzYjI3ZjJlODRjMTI0NTBhN2Q4YjhjMWM5Zjg5NGUxNzU3NDY1ZDFiNzRmODM",
+      "price": "11,499.00"
+    },
+    {
+      "Amazon": "false",
+      "Flipkart": "false",
+      "Reliance": "true",
+      "link": "https://www.reliancedigital.in/samsung-galaxy-a03s-64-gb-4-gb-ram-black-mobile-phone/p/491997515",
+      "title": "Samsung Galaxy A03s 64 GB, 4 GB RAM, Black, Mobile Phone",
+      "src": "https://www.reliancedigital.in/medias/Samsung-Galaxy-A03s-Smartphone-491997515-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1NjMxNHxpbWFnZS9qcGVnfGltYWdlcy9oMDYvaDU2Lzk2MjM1OTQ1OTg0MzAuanBnfGNkNTgxMWEyMDU0NmYxYTVkMjljOTVlYzE0MTlhOThhYjY5ZDcxZDE3NTRjODg5NTYxMzFkNTMyMTVmOGQ1OTk",
+      "price": "11,499.00"
+    }
+  ]
+}

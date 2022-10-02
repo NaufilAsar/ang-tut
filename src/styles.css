@@ -16,3 +16,8 @@ body {
   position: absolute;
   top: 0;
 } */
+.panel {
+  width: 100%;
+  height: 70px;
+  background: #fafafa;
+}

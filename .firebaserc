@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "thrifty-ml": {
+      "hosting": {
+        "major-test-2": [
+          "thrifty-ml"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "thrifty-ml"
+  }
+}

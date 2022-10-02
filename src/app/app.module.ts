@@ -9,7 +9,13 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { ResultsPageComponent } from './home-page/results-page/results-page.component';
+import { ContactPageComponent } from './contact-page/contact-page.component';
+import { LoginPageComponent } from './login-page/login-page.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideAuth,getAuth } from '@angular/fire/auth';
+import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { provideFunctions,getFunctions } from '@angular/fire/functions';
 
 @NgModule({
   declarations: [
@@ -17,15 +23,23 @@ import { ResultsPageComponent } from './home-page/results-page/results-page.comp
     NavBarComponent,
     NotFoundPageComponent,
     HomePageComponent,
-    ResultsPageComponent
+    HomePageComponent,
+    ContactPageComponent,
+    LoginPageComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, FormsModule, ReactiveFormsModule,
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
     FontAwesomeModule,
     NgbModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAuth(() => getAuth()),
+    provideFirestore(() => getFirestore()),
+    provideFunctions(() => getFunctions()),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

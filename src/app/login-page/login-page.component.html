@@ -49,12 +49,16 @@
         "
       >
         <div class="d-flex justify-content-center mt-3">
-          <p class="text-secondary">User not found.. Try signing up!</p>
+          <p class="alert alert-danger text-danger" role="alert">
+            User not found.. Try signing up!
+          </p>
         </div>
       </div>
 
-      <ng-template #other_content>
-        <span>{{ "Error-" + firebaseErrorMessage }}</span>
+      <ng-template #other_content class="d-flex justify-content-center mt-3">
+        <span class="alert alert-danger" role="alert">{{
+          "Error-" + firebaseErrorMessage
+        }}</span>
       </ng-template>
     </div>
   </form>

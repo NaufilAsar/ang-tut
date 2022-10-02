@@ -1,2 +1,61 @@
 <div class="panel"></div>
-<p>login-page works!</p>
+
+<div style="padding: 5%; width: 90%" class="card mx-auto mt-5">
+  <form [formGroup]="loginForm" (ngSubmit)="loginUser()" class="form-inline">
+    <div class="d-flex justify-content-center mt-2">
+      <h1 style="font-size: 3.5rem">Login</h1>
+    </div>
+    <div class="d-flex justify-content-center my-0">
+      <p class="text-secondary" style="font-size: 1.3rem">
+        To receive email notifications for products you like. Completely
+        optional.
+      </p>
+    </div>
+    <div class="col col-lg-6 col-md-9 col-sm-12 mx-auto">
+      <input
+        id="email"
+        type="text"
+        formControlName="email"
+        placeholder="Email"
+        autocomplete="on"
+        class="form-control text-center mx-auto mt-5"
+      />
+    </div>
+    <div class="col col-lg-6 col-md-9 col-sm-12 mx-auto">
+      <input
+        id="password"
+        type="password"
+        autocomplete="off"
+        formControlName="password"
+        placeholder="Password"
+        class="form-control text-center mx-auto my-3"
+      />
+    </div>
+    <div class="d-flex justify-content-center mt-3">
+      <button type="submit" class="btn btn-warning btn-md px-5">Submit</button>
+    </div>
+    <div class="d-flex justify-content-center mt-3">
+      <a routerLink="/signup" class="btn btn-outline-secondary btn-sm"
+        >Sign Up</a
+      >
+    </div>
+
+    <div *ngIf="firebaseErrorMessage != ''" class="error-style">
+      <div
+        *ngIf="
+          firebaseErrorMessage ==
+            'Firebase: There is no user record corresponding to this identifier. The user may have been deleted. (auth/user-not-found).';
+          else other_content
+        "
+      >
+        <div class="d-flex justify-content-center mt-3">
+          <p class="text-secondary">User not found.. Try signing up!</p>
+        </div>
+      </div>
+
+      <ng-template #other_content>
+        <span>{{ "Error-" + firebaseErrorMessage }}</span>
+      </ng-template>
+    </div>
+  </form>
+</div>

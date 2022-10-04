@@ -1,37 +1,67 @@
 <!-- Display the global navbar -->
 
 <div class="main-container" style="position: relative; top: 65px">
-  <!-- <p>Home page works!</p> -->
-  <div class="search-container mt-5 pt-5">
+  <!-- Logo Title -->
+  <div class="mt-3 mt-sm-5 mx-auto" style="width: 100px">
+    <img
+      class="text-center"
+      src="assets\imgs\logo-transparent.png"
+      alt="Logo"
+      height="100px"
+    />
+    <h1 class="mx-auto">Thrifty</h1>
+  </div>
+
+  <!-- Search Bar -->
+  <div class="search-container mt-1 mt-sm-3 pt-5">
     <form class="form-inline d-flex justify-content-center gap-2">
       <input
-        id="name"
+        id="search_box"
         type="text"
         [formControl]="search_product"
-        placeholder="Search.."
+        placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Search.."
         class="form-control text-center"
         style="display: inline; width: 60vw"
       />
-      <button type="button" (click)="onClickSearch()" class="btn btn-warning">
+      <button
+        id="search_btn"
+        type="button"
+        (click)="onClickSearch()"
+        class="btn btn-warning"
+      >
         <fa-icon [icon]="search_icon"></fa-icon>
       </button>
     </form>
   </div>
 </div>
 
+<div *ngIf="resultsLoading" style="margin-top: 100px">
+  <!-- display loading animation -->
+  <ng-lottie height="100px" [options]="optionsLoading"></ng-lottie>
+</div>
+
 <div *ngIf="resultsLoaded" style="margin-top: 70px">
   <!-- <app-results-page [results]="{ name: 'naufil' }"></app-results-page> -->
 </div>
 
-<!-- <blockquote class="blockquote text-center">
-  <p class="mb-0">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
-    erat a ante.
-  </p>
-  <footer class="blockquote-footer">
-    Someone famous in <cite title="Source Title">Source Title</cite>
-  </footer>
-</blockquote> -->
+<div class="section text-center" style="margin-top: 170px">
+  <h3 class="text-secondary" style="font-family: 'Poppins'">
+    We make your task to search hundreds of websites for the best price
+    <span class="text-decoration-underline">simple.</span>
+  </h3>
+  <ng-lottie height="400px" [options]="optionsThinking"></ng-lottie>
+</div>
+<!-- <div class="bg-white" style="position: relative; top: 200px">
+  <blockquote class="blockquote text-center">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
+      erat a ante.
+    </p>
+    <footer class="blockquote-footer">
+      Someone famous in <cite title="Source Title">Source Title</cite>
+    </footer>
+  </blockquote>
+</div> -->
 
 <!-- ---------------------- Results -------------------------------- -->
 

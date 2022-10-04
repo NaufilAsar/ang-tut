@@ -14,13 +14,16 @@ import { ContactPageComponent } from './contact-page/contact-page.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { LottieModule } from 'ngx-lottie'; // add this line
 
 // Firebase
 import { AngularFireModule } from '@angular/fire/compat/';
 import { environment } from '../environments/environment';
 import { SignUpComponent } from './sign-up/sign-up.component';
 
-// Angular Material
+export function playerFactory() {
+  return import('lottie-web'); // add this line
+} // add this line
 
 @NgModule({
   declarations: [
@@ -40,6 +43,7 @@ import { SignUpComponent } from './sign-up/sign-up.component';
     FontAwesomeModule,
     NgbModule,
     AngularFireModule.initializeApp(environment.firebase),
+    LottieModule.forRoot({ player: playerFactory }), // add this line
   ],
   providers: [],
   bootstrap: [AppComponent],

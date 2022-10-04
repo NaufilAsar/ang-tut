@@ -1,15 +1,16 @@
 import { Component, OnInit } from '@angular/core';
+import { AnimationOptions } from 'ngx-lottie';
 
 @Component({
   selector: 'app-not-found-page',
   templateUrl: './not-found-page.component.html',
-  styleUrls: ['./not-found-page.component.css']
+  styleUrls: ['./not-found-page.component.css'],
 })
 export class NotFoundPageComponent implements OnInit {
+  optionsError: AnimationOptions = {
+    path: 'assets/anim/error-404.json',
+  };
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

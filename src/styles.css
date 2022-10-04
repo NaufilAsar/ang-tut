@@ -11,16 +11,12 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
-/* app-nav-bar {
-  position: absolute;
-  top: 0;
-} */
+
 .panel {
   width: 100%;
   height: 70px;
   background: #fafafa;
 }
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

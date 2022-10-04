@@ -1,0 +1,438 @@
+{
+  "test": {
+    "Products": [
+      {
+        "Amazon": "true",
+        "Flipkart": "false",
+        "Reliance": "false",
+        "link": "amazon.in/New-Apple-iPhone-12-64GB/dp/B08L5WHFT9",
+        "title": "Apple iPhone 12 (64GB) - Blue",
+        "src": "https://m.media-amazon.com/images/I/71ZOtNdaZCL._AC_UY218_.jpg",
+        "price": "47,999"
+      },
+      {
+        "Amazon": "true",
+        "Flipkart": "false",
+        "Reliance": "false",
+        "link": "amazon.in/New-Apple-iPhone-12-64GB/dp/B08L5T3S7T",
+        "title": "Apple iPhone 12 (64GB) - Black",
+        "src": "https://m.media-amazon.com/images/I/71fVoqRC0wL._AC_UY218_.jpg",
+        "price": "47,999"
+      },
+      {
+        "Amazon": "true",
+        "Flipkart": "false",
+        "Reliance": "false",
+        "link": "amazon.in/New-Apple-iPhone-12-128GB/dp/B08L5S1NT7",
+        "title": "Apple iPhone 12 (128GB) - White",
+        "src": "https://m.media-amazon.com/images/I/711wsjBtWeL._AC_UY218_.jpg",
+        "price": "54,490"
+      },
+      {
+        "Amazon": "true",
+        "Flipkart": "false",
+        "Reliance": "false",
+        "link": "amazon.in/Apple-iPhone-13-128GB-Blue/dp/B09G9BL5CP",
+        "title": "MORE RESULTS",
+        "src": "https://m.media-amazon.com/images/I/71xb2xkN5qL._AC_UY218_.jpg",
+        "price": "64,900"
+      },
+      {
+        "Amazon": "true",
+        "Flipkart": "false",
+        "Reliance": "false",
+        "link": "amazon.in/New-Apple-iPhone-12-64GB/dp/B08L5VJYV7",
+        "title": "Apple iPhone 13 (128GB) - Blue",
+        "src": "https://m.media-amazon.com/images/I/711wsjBtWeL._AC_UY218_.jpg",
+        "price": "47,999"
+      },
+      {
+        "Amazon": "true",
+        "Flipkart": "false",
+        "Reliance": "false",
+        "link": "amazon.in/Apple-iPhone-13-128GB-Midnight/dp/B09G9HD6PD",
+        "title": "Apple iPhone 12 (64GB) - White",
+        "src": "https://m.media-amazon.com/images/I/61VuVU94RnL._AC_UY218_.jpg",
+        "price": "64,900"
+      },
+      {
+        "Amazon": "true",
+        "Flipkart": "false",
+        "Reliance": "false",
+        "link": "amazon.in/Apple-iPhone-13-128GB-Product/dp/B09G99CW2N",
+        "title": "Apple iPhone 13 (128GB) - Midnight",
+        "src": "https://m.media-amazon.com/images/I/71gm8v4uPBL._AC_UY218_.jpg",
+        "price": "64,900"
+      },
+      {
+        "Amazon": "true",
+        "Flipkart": "false",
+        "Reliance": "false",
+        "link": "amazon.in/New-Apple-iPhone-12-128GB/dp/B08L5WD9D6",
+        "title": "Apple iPhone 13 (128GB) - (Product) RED",
+        "src": "https://m.media-amazon.com/images/I/71fVoqRC0wL._AC_UY218_.jpg",
+        "price": "54,490"
+      },
+      {
+        "Amazon": "true",
+        "Flipkart": "false",
+        "Reliance": "false",
+        "link": "amazon.in/Apple-iPhone-13-Pro-128/dp/B09V48BYGP",
+        "title": "Apple iPhone 12 (128GB) - Black",
+        "src": "https://m.media-amazon.com/images/I/61AwGDDZd3L._AC_UY218_.jpg",
+        "price": "1,06,900"
+      },
+      {
+        "Amazon": "true",
+        "Flipkart": "false",
+        "Reliance": "false",
+        "link": "amazon.in/New-Apple-iPhone-12-64GB/dp/B08L5W16HX",
+        "title": "Apple iPhone 13 Pro (128 GB) - Alpine Green",
+        "src": "https://m.media-amazon.com/images/I/71cQWYVtcBL._AC_UY218_.jpg",
+        "price": "47,999"
+      },
+      {
+        "Amazon": "true",
+        "Flipkart": "false",
+        "Reliance": "false",
+        "link": "amazon.in/New-Apple-iPhone-12-64GB/dp/B0932QYBH8",
+        "title": "Apple iPhone 12 (64GB) - Green",
+        "src": "https://m.media-amazon.com/images/I/71hIfcIPyxS._AC_UY218_.jpg",
+        "price": "47,999"
+      },
+      {
+        "Amazon": "true",
+        "Flipkart": "false",
+        "Reliance": "false",
+        "link": "amazon.in/New-Apple-iPhone-12-128GB/dp/B0932MD32V",
+        "title": "Apple iPhone 12 (64GB) - Purple",
+        "src": "https://m.media-amazon.com/images/I/71hIfcIPyxS._AC_UY218_.jpg",
+        "price": "54,490"
+      },
+      {
+        "Amazon": "true",
+        "Flipkart": "false",
+        "Reliance": "false",
+        "link": "amazon.in/Apple-iPhone-13-128GB-Pink/dp/B09G9FPGTN",
+        "title": "MORE RESULTS",
+        "src": "https://m.media-amazon.com/images/I/61l9ppRIiqL._AC_UY218_.jpg",
+        "price": "64,900"
+      },
+      {
+        "Amazon": "true",
+        "Flipkart": "false",
+        "Reliance": "false",
+        "link": "amazon.in/Apple-iPhone-13-128GB-Starlight/dp/B09G9D8KRQ",
+        "title": "Apple iPhone 12 (128GB) - Purple",
+        "src": "https://m.media-amazon.com/images/I/71GLMJ7TQiL._AC_UY218_.jpg",
+        "price": "64,900"
+      },
+      {
+        "Amazon": "true",
+        "Flipkart": "false",
+        "Reliance": "false",
+        "link": "amazon.in/Apple-iPhone-13-Pro-128GB/dp/B09G93RSZF",
+        "title": "Apple iPhone 13 (128GB) - Pink",
+        "src": "https://m.media-amazon.com/images/I/61sDyXAepuL._AC_UY218_.jpg",
+        "price": "1,06,900"
+      },
+      {
+        "Amazon": "true",
+        "Flipkart": "false",
+        "Reliance": "false",
+        "link": "amazon.in/New-Apple-iPhone-12-128GB/dp/B08L5VJWCV",
+        "title": "Apple iPhone 13 (128GB) - Starlight",
+        "src": "https://m.media-amazon.com/images/I/71cQWYVtcBL._AC_UY218_.jpg",
+        "price": "54,490"
+      },
+      {
+        "Amazon": "false",
+        "Flipkart": "true",
+        "Reliance": "false",
+        "link": "https://www.flipkart.com/apple-iphone-11-black-128-gb/p/itm8244e8d955aba",
+        "title": "APPLE iPhone 11 (Black, 128 GB)",
+        "src": "https://rukminim1.flixcart.com/image/312/312/k2jbyq80pkrrdj/mobile-refurbished/x/j/s/iphone-11-128-d-mwm02hn-a-apple-0-original-imafkg242ugz8hwc.jpeg?q=70",
+        "price": "₹46,990"
+      },
+      {
+        "Amazon": "false",
+        "Flipkart": "true",
+        "Reliance": "false",
+        "link": "https://www.flipkart.com/apple-iphone-13-green-128-gb/p/itm18a55937b2607",
+        "title": "APPLE iPhone 13 (Green, 128 GB)",
+        "src": "https://rukminim1.flixcart.com/image/312/312/l0igvww0/mobile/r/q/m/-original-imagca5ajerqpfjy.jpeg?q=70",
+        "price": "₹66,990"
+      },
+      {
+        "Amazon": "false",
+        "Flipkart": "true",
+        "Reliance": "false",
+        "link": "https://www.flipkart.com/apple-iphone-11-white-128-gb/p/itme32df47ea6742",
+        "title": "APPLE iPhone 11 (White, 128 GB)",
+        "src": "https://rukminim1.flixcart.com/image/312/312/k2jbyq80pkrrdj/mobile-refurbished/k/y/d/iphone-11-256-u-mwm82hn-a-apple-0-original-imafkg25mhaztxns.jpeg?q=70",
+        "price": "₹46,990"
+      },
+      {
+        "Amazon": "false",
+        "Flipkart": "true",
+        "Reliance": "false",
+        "link": "https://www.flipkart.com/apple-iphone-11-black-64-gb/p/itm4e5041ba101fd",
+        "title": "APPLE iPhone 11 (Black, 64 GB)",
+        "src": "https://rukminim1.flixcart.com/image/312/312/k2jbyq80pkrrdj/mobile-refurbished/x/j/s/iphone-11-128-d-mwm02hn-a-apple-0-original-imafkg242ugz8hwc.jpeg?q=70",
+        "price": "₹41,990"
+      },
+      {
+        "Amazon": "false",
+        "Flipkart": "true",
+        "Reliance": "false",
+        "link": "https://www.flipkart.com/apple-iphone-11-white-64-gb/p/itmfc6a7091eb20b",
+        "title": "APPLE iPhone 11 (White, 64 GB)",
+        "src": "https://rukminim1.flixcart.com/image/312/312/k2jbyq80pkrrdj/mobile-refurbished/k/y/d/iphone-11-256-u-mwm82hn-a-apple-0-original-imafkg25mhaztxns.jpeg?q=70",
+        "price": "₹41,990"
+      },
+      {
+        "Amazon": "false",
+        "Flipkart": "true",
+        "Reliance": "false",
+        "link": "https://www.flipkart.com/apple-iphone-13-starlight-128-gb/p/itmc9604f122ae7f",
+        "title": "APPLE iPhone 13 (Starlight, 128 GB)",
+        "src": "https://rukminim1.flixcart.com/image/312/312/ktketu80/mobile/6/n/d/iphone-13-mlpg3hn-a-apple-original-imag6vpyghayhhrh.jpeg?q=70",
+        "price": "₹66,990"
+      },
+      {
+        "Amazon": "false",
+        "Flipkart": "true",
+        "Reliance": "false",
+        "link": "https://www.flipkart.com/apple-iphone-11-purple-64-gb/p/itm2b8d03427ddac",
+        "title": "APPLE iPhone 11 (Purple, 64 GB)",
+        "src": "https://rukminim1.flixcart.com/image/312/312/k2jbyq80pkrrdj/mobile-refurbished/y/k/z/iphone-11-64-a-mwlx2hn-a-apple-0-original-imafkg24ymsjav9h.jpeg?q=70",
+        "price": "₹41,990"
+      },
+      {
+        "Amazon": "false",
+        "Flipkart": "true",
+        "Reliance": "false",
+        "link": "https://www.flipkart.com/apple-iphone-13-pink-128-gb/p/itm6e30c6ee045d2",
+        "title": "APPLE iPhone 13 (Pink, 128 GB)",
+        "src": "https://rukminim1.flixcart.com/image/312/312/ktketu80/mobile/8/z/w/iphone-13-mlph3hn-a-apple-original-imag6vzzhrxgazsg.jpeg?q=70",
+        "price": "₹66,990"
+      },
+      {
+        "Amazon": "false",
+        "Flipkart": "true",
+        "Reliance": "false",
+        "link": "https://www.flipkart.com/apple-iphone-13-product-red-128-gb/p/itm99b5658d148b0",
+        "title": "APPLE iPhone 13 ((PRODUCT)RED, 128 GB)",
+        "src": "https://rukminim1.flixcart.com/image/312/312/ktketu80/mobile/a/m/7/iphone-13-mlpj3hn-a-apple-original-imag6vpyk3w4zarg.jpeg?q=70",
+        "price": "₹66,990"
+      },
+      {
+        "Amazon": "false",
+        "Flipkart": "true",
+        "Reliance": "false",
+        "link": "https://www.flipkart.com/apple-iphone-11-green-128-gb/p/itm97529bbf640ca",
+        "title": "APPLE iPhone 11 (Green, 128 GB)",
+        "src": "https://rukminim1.flixcart.com/image/312/312/k2jbyq80pkrrdj/mobile-refurbished/u/z/t/iphone-11-256-c-mwmd2hn-a-apple-0-original-imafkg24wszdhzy3.jpeg?q=70",
+        "price": "₹46,990"
+      },
+      {
+        "Amazon": "false",
+        "Flipkart": "true",
+        "Reliance": "false",
+        "link": "https://www.flipkart.com/apple-iphone-11-purple-128-gb/p/itmb7ca0b05522ff",
+        "title": "APPLE iPhone 11 (Purple, 128 GB)",
+        "src": "https://rukminim1.flixcart.com/image/312/312/k2jbyq80pkrrdj/mobile-refurbished/y/k/z/iphone-11-64-a-mwlx2hn-a-apple-0-original-imafkg24ymsjav9h.jpeg?q=70",
+        "price": "₹46,990"
+      },
+      {
+        "Amazon": "false",
+        "Flipkart": "true",
+        "Reliance": "false",
+        "link": "https://www.flipkart.com/apple-iphone-13-midnight-128-gb/p/itmca361aab1c5b0",
+        "title": "APPLE iPhone 13 (Midnight, 128 GB)",
+        "src": "https://rukminim1.flixcart.com/image/312/312/ktketu80/mobile/s/l/c/iphone-13-mlpf3hn-a-apple-original-imag6vzz5qvejz8z.jpeg?q=70",
+        "price": "₹66,990"
+      },
+      {
+        "Amazon": "false",
+        "Flipkart": "true",
+        "Reliance": "false",
+        "link": "https://www.flipkart.com/apple-iphone-11-red-64-gb/p/itmc3935326f2feb",
+        "title": "APPLE iPhone 11 (Red, 64 GB)",
+        "src": "https://rukminim1.flixcart.com/image/312/312/k2jbyq80pkrrdj/mobile-refurbished/q/z/g/iphone-11-128-a-mwm32hn-a-apple-0-original-imafkg25hjmuy98e.jpeg?q=70",
+        "price": "₹41,990"
+      },
+      {
+        "Amazon": "false",
+        "Flipkart": "true",
+        "Reliance": "false",
+        "link": "https://www.flipkart.com/apple-iphone-13-blue-128-gb/p/itm6c601e0a58b3c",
+        "title": "APPLE iPhone 13 (Blue, 128 GB)",
+        "src": "https://rukminim1.flixcart.com/image/312/312/ktketu80/mobile/2/y/o/iphone-13-mlpk3hn-a-apple-original-imag6vpyur6hjngg.jpeg?q=70",
+        "price": "₹66,990"
+      },
+      {
+        "Amazon": "false",
+        "Flipkart": "true",
+        "Reliance": "false",
+        "link": "https://www.flipkart.com/apple-iphone-11-green-64-gb/p/itm386a85013a3d1",
+        "title": "APPLE iPhone 11 (Green, 64 GB)",
+        "src": "https://rukminim1.flixcart.com/image/312/312/k2jbyq80pkrrdj/mobile-refurbished/u/z/t/iphone-11-256-c-mwmd2hn-a-apple-0-original-imafkg24wszdhzy3.jpeg?q=70",
+        "price": "₹41,990"
+      },
+      {
+        "Amazon": "false",
+        "Flipkart": "true",
+        "Reliance": "false",
+        "link": "https://www.flipkart.com/apple-iphone-12-mini-blue-64-gb/p/itm2883104474448",
+        "title": "APPLE iPhone 12 Mini (Blue, 64 GB)",
+        "src": "https://rukminim1.flixcart.com/image/312/312/kg8avm80/mobile/s/h/f/apple-iphone-12-mini-dummyapplefsn-original-imafwgbfukehtnxv.jpeg?q=70",
+        "price": "₹55,369"
+      },
+      {
+        "Amazon": "false",
+        "Flipkart": "false",
+        "Reliance": "true",
+        "link": "https://www.reliancedigital.in/neopack-tgclip11pro-2-5d-tempered-glass-for-iphone-x-iphone-xs-iphone-11-pro/p/491998698",
+        "title": "Neopack TGCLIP11PRO 2.5D Tempered Glass for iphone X, iphone XS, iphone 11 Pro",
+        "src": "https://www.reliancedigital.in/medias/Neopack-TGCLIP11PRO-MOBILESCREENPROTEC-491998698-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w0ODMyN3xpbWFnZS9qcGVnfGltYWdlcy9oOWQvaDYyLzk2NzU1NTM4NjU3NTguanBnfDI1YThiYmFkMjAxZTk3ZGNiMDk0YTE0MzBlYjMwMWY5ZWQzN2Y5M2E1YzJkZDFhZGExNjNkZDhlZmUyZDQ3NDM",
+        "price": "1,499.00"
+      },
+      {
+        "Amazon": "false",
+        "Flipkart": "false",
+        "Reliance": "true",
+        "link": "https://www.reliancedigital.in/neopack-tgcl7-2-5d-round-edge-9h-hardness-tempered-glass-for-iphone-6-iphone-7-iphone-8-iphone-se-clear-/p/491998689",
+        "title": "Neopack TGCL7 2.5D Round Edge, 9H Hardness Tempered Glass for iPhone 6, iPhone 7, iPhone 8, iPhone SE (Clear)",
+        "src": "https://www.reliancedigital.in/medias/Neopack-TGCL7-MOBILE-SCREENPROTEC-491998689-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w5NTk1fGltYWdlL2pwZWd8aW1hZ2VzL2gxMy9oNTYvOTY3NTUxNDIxNjQ3OC5qcGd8YzdlNjIwOTU1NmYyYWM3NmI2MjQwOWRkMGQ1NjU5NzllYzQ0ZGQxNzMzMzc3YTFiMTVlN2Y2NTFhYzg2Mzk5MA",
+        "price": "999.00"
+      },
+      {
+        "Amazon": "false",
+        "Flipkart": "false",
+        "Reliance": "true",
+        "link": "https://www.reliancedigital.in/neopack-tgpvbkx-privacy-glass-for-iphone-x-iphone-xs/p/491998699",
+        "title": "Neopack TGPVBKX Privacy Glass for iphone X, iphone XS",
+        "src": "https://www.reliancedigital.in/medias/Neopack-TGPVBKX-MOBILESCREENPROTEC-491998699-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w0ODMyN3xpbWFnZS9qcGVnfGltYWdlcy9oNjYvaGFiLzk2NzU1MTYxODI1NTguanBnfGUzMmRmN2YyMWE5NmE4N2NiYjdiYTAwOGY3MmM5NWQ4MGExNTBmNzM5MjNkZTYwZDVjY2YwZDI3ZTZmZWMyYjY",
+        "price": "1,999.00"
+      },
+      {
+        "Amazon": "false",
+        "Flipkart": "false",
+        "Reliance": "true",
+        "link": "https://www.reliancedigital.in/belkin-f8w912zz-screenforce-tempered-glass-for-iphone-xr-iphone-11/p/491550759",
+        "title": "Belkin F8W912ZZ ScreenForce Tempered Glass for iPhone XR, iphone 11",
+        "src": "https://www.reliancedigital.in/medias/Belkin-F8W912ZZ-Screen-Protector-and-Tempered-Glass-491550759-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w0Mjg3NnxpbWFnZS9qcGVnfGltYWdlcy9oYTUvaDUxLzkyNjM5MjA0NDc1MTguanBnfDg0MzNhNDU1NjEyYzQ5YzRiYWEyNzlkMTFmZjU4MjkwZjg2NDg1MGVlMjZlMDBmZDA1ZjRkMDI3YzY1YjAwOGI",
+        "price": "999.00"
+      },
+      {
+        "Amazon": "false",
+        "Flipkart": "false",
+        "Reliance": "true",
+        "link": "https://www.reliancedigital.in/neopack-tgagbkx-anti-glare-glass-scratch-resistant-screen-protector-for-iphone-x-iphone-xs-iphone-11-pro-black-/p/491998702",
+        "title": "Neopack TGAGBKX Anti Glare Glass Scratch Resistant Screen Protector for iPhone X, iPhone XS, iPhone 11 Pro (Black)",
+        "src": "https://www.reliancedigital.in/medias/Neopack-TGAGBKX-MOBILESCREENPROTEC-491998702-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w0NzIzNXxpbWFnZS9qcGVnfGltYWdlcy9oNjgvaDJjLzk2NzU1NTc4NjM0NTQuanBnfGJjODU2ZjNiM2U2NzJjZDE2ZDhiN2JhNjQ1ZDQ3OTdjODZhYjdkY2RkMGRkNTM0NGM0ZDA2NTEzNTg2Y2YwNTI",
+        "price": "1,999.00"
+      },
+      {
+        "Amazon": "false",
+        "Flipkart": "false",
+        "Reliance": "true",
+        "link": "https://www.reliancedigital.in/neopack-tgcl8pl-2-5d-round-edge-9h-hardness-tempered-glass-for-iphone-6-iphone-7-iphone-8-plus-clear-/p/491998690",
+        "title": "Neopack TGCL8PL 2.5D Round Edge 9H Hardness Tempered Glass for iphone 6, iphone 7, iphone 8 Plus (Clear)",
+        "src": "https://www.reliancedigital.in/medias/Neopack-TGCL8PL-MOBILESCREENPROTEC-491998690-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1MTM5M3xpbWFnZS9qcGVnfGltYWdlcy9oMGEvaDkwLzk2NzU1NTgxOTExMzQuanBnfDgxMjY5ZjAwNDQ1MDBlYzA4MzY3MjZhOTQ3YTQ2ZjA1YTAyOGYxYTQ4OWVmMDg1M2Y5NDQ1NGVhNzYxMmYxMDM",
+        "price": "1,199.00"
+      },
+      {
+        "Amazon": "false",
+        "Flipkart": "false",
+        "Reliance": "true",
+        "link": "https://www.reliancedigital.in/in-base-ib-609-tempered-glass-for-iphone-xs-iphone-11-pro/p/492573840",
+        "title": "In Base IB-609 Tempered Glass for iPhone XS/iPhone 11 Pro",
+        "src": "https://www.reliancedigital.in/medias/In-Base-IB-609-Mobile-Screen-Protectors-492573840-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1NDQzOHxpbWFnZS9qcGVnfGltYWdlcy9oMzIvaDc2Lzk4MDQyMjg4MjEwMjIuanBnfDM4MDliNGNjOGJlYjhmZGViNDYzYjEwMmRiOGZkZDBjZjMxNGJjNzU5NGJjNTZlNTBiNzE4NjBmNDNjZWM0NTc",
+        "price": "499.00"
+      },
+      {
+        "Amazon": "false",
+        "Flipkart": "false",
+        "Reliance": "true",
+        "link": "https://www.reliancedigital.in/neopack-3d-curve-fit-tempered-glass-for-iphone-xr-iphone-11/p/491420296",
+        "title": "Neopack 3D Curve Fit Tempered Glass for iPhone XR, iPhone 11",
+        "src": "https://www.reliancedigital.in/medias/Neopack-3D-Curve-Fit-Tempered-Glass-and-Screen-Protectors-491420296-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1NjE5NHxpbWFnZS9qcGVnfGltYWdlcy9oNWQvaDE4LzkzMDg5MTU4NTk0ODYuanBnfDg5NDUzYjM0ODI4ZmQ4M2E5YTZhZTg5MjUyNjQ4YzA5OTgxMDI5YjllY2MyN2U4ZTQ2ZTI0MTQ5OGJlNjEwNzY",
+        "price": "999.00"
+      },
+      {
+        "Amazon": "false",
+        "Flipkart": "false",
+        "Reliance": "true",
+        "link": "https://www.reliancedigital.in/in-base-ib-610-tempered-glass-for-iphone-xs-iphone-11-pro-max/p/492573838",
+        "title": "In Base IB-610 Tempered Glass for iPhone XS/iPhone 11 Pro Max",
+        "src": "https://www.reliancedigital.in/medias/In-Base-IB-610-Mobile-Screen-Protectors-492573838-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1MzA5NHxpbWFnZS9qcGVnfGltYWdlcy9oMWYvaGQzLzk4MDQyMjI5MjI3ODIuanBnfGIxYzE4YmZmN2IwYzcwMTcxMTQxMzI5NzBkNmEwYzNhZTlmYTUzYTYzZjU5NTlhMzljYzZlOWJhNTQyNmQwZDE",
+        "price": "499.00"
+      },
+      {
+        "Amazon": "false",
+        "Flipkart": "false",
+        "Reliance": "true",
+        "link": "https://www.reliancedigital.in/belkin-f8w769qe-screenforce-tempered-glass-for-iphone-7-plus-iphone-8-plus/p/491378293",
+        "title": "Belkin F8W769QE ScreenForce Tempered Glass for iPhone 7 Plus, iPhone 8 Plus",
+        "src": "https://www.reliancedigital.in/medias/Belkin-F8W769QE-Screen-Protector-and-Tempered-Glass-491378293-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzNDU1OXxpbWFnZS9qcGVnfGltYWdlcy9oZTYvaDBjLzkyNjM5MTk3OTIxNTguanBnfGE4YzJjNDhmYWZhOGRkOTI2YTY3YmVjYWRkMmFjYzE5ZmRiOWUyYTk5NGExYWVmMDU4NTdhZWQzZTRiNmYwYjQ",
+        "price": "999.00"
+      },
+      {
+        "Amazon": "false",
+        "Flipkart": "false",
+        "Reliance": "true",
+        "link": "https://www.reliancedigital.in/stuffcool-silo-soft-mobile-case-for-apple-iphone-12-iphone-12-pro-black/p/491901379",
+        "title": "Stuffcool Silo Soft Mobile Case for Apple iPhone 12, iPhone 12 Pro, Black",
+        "src": "https://www.reliancedigital.in/medias/Stuffcool-Silo-Soft-Mobile-Cases-491901379-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w0NDg1M3xpbWFnZS9qcGVnfGltYWdlcy9oYWEvaDI2Lzk0MTExOTUwMTExMDIuanBnfGMxY2MwYTc2NDdiMzNjOGFjOTc1NTIxZTg1Y2IyNGQyMDFmNWVmZWEzZjE0N2QyZTdmMWZkYTYzYjNmOTUwMjI",
+        "price": "999.00"
+      },
+      {
+        "Amazon": "false",
+        "Flipkart": "false",
+        "Reliance": "true",
+        "link": "https://www.reliancedigital.in/neopack-tgag61-anti-glare-2-5d-tempered-glass-for-iphone-12-iphone-12-pro/p/491998695",
+        "title": "Neopack TGAG61 Anti Glare 2.5D Tempered Glass for iPhone 12, iPhone 12 Pro",
+        "src": "https://www.reliancedigital.in/medias/Neopack-TGAG61-MOBILESCREENPROTEC-491998695-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzNzg2NnxpbWFnZS9qcGVnfGltYWdlcy9oYWQvaDY0Lzk2NzU1MTQ4NzE4MzguanBnfGEyOWFjNmQwZDQ1YzY4ZGNiNzEyNDYwYjJmNThmN2QzMWRhNWFhMmJiMDM5NjBhNmE4NzlkOGY3YWVmNDFiNzc",
+        "price": "1,999.00"
+      },
+      {
+        "Amazon": "false",
+        "Flipkart": "false",
+        "Reliance": "true",
+        "link": "https://www.reliancedigital.in/inbase-ultra-clear-ib-828-mobile-case-for-iphone-12-iphone-12-pro-clear/p/492573778",
+        "title": "Inbase Ultra Clear IB-828 Mobile Case for iPhone 12/iPhone 12 Pro, Clear",
+        "src": "https://www.reliancedigital.in/medias/In-Base-IB-828-Mobile-Cases-492573778-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1MjA4MHxpbWFnZS9qcGVnfGltYWdlcy9oOTYvaGE1Lzk4MDQxMjc3NjQ1MTAuanBnfDViOTY5NTRkZDE4MzJjODZiMTgxYzhkNmYwZWMzMzhhMmVlZWQ0YWNhOGI2N2Y5NDBjM2NmN2Y4YTQ5NzNhYjg",
+        "price": "799.00"
+      },
+      {
+        "Amazon": "false",
+        "Flipkart": "false",
+        "Reliance": "true",
+        "link": "https://www.reliancedigital.in/belkin-f8w911zz-screenforce-tempered-glass-for-iphone-xs-max-iphone-11-pro-max/p/491550758",
+        "title": "Belkin F8W911ZZ ScreenForce Tempered Glass for iPhone XS Max, iPhone 11 Pro Max",
+        "src": "https://www.reliancedigital.in/medias/Belkin-F8W911ZZ-Screen-Protector-and-Tempered-Glass-491550758-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w0MjAxOHxpbWFnZS9qcGVnfGltYWdlcy9oYmIvaDQ5LzkyNjM5MjA3NzUxOTguanBnfGYyN2E2ZTQyZjQxMjVjOWNiNTRhZTg2ODdkMGMwYTZjN2I5ODZhYjRhMjhmOGRlNjYyNmE3NTRkZDFiMTFhMjA",
+        "price": "799.00"
+      },
+      {
+        "Amazon": "false",
+        "Flipkart": "false",
+        "Reliance": "true",
+        "link": "https://www.reliancedigital.in/apple-leather-mobile-case-with-magsafe-for-iphone-12-pro-iphone-12-black-mhkg3zm-a/p/491901480",
+        "title": "Apple Leather Mobile Case with MagSafe for iPhone 12 Pro/iPhone 12, Black MHKG3ZM/A",
+        "src": "https://www.reliancedigital.in/medias/Apple-MHKG3ZM-A-Mobile-Case-491901480-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyNzI0OXxpbWFnZS9qcGVnfGltYWdlcy9oNzAvaGZhLzk0NTU2MTQ4NTMxNTAuanBnfGYxNzMwZjIzZDY4ODNmZDZlMzIwMDk1YzI2NzY4NzIzNTUwMGNjZjVkMzAwMjlmMDg1ZmUzNGMxMmVhYjg2OGY",
+        "price": "5,900.00"
+      },
+      {
+        "Amazon": "false",
+        "Flipkart": "false",
+        "Reliance": "true",
+        "link": "https://www.reliancedigital.in/apple-leather-mobile-case-with-magsafe-for-iphone-12-pro-iphone-12-saddle-brown-mhkf3zm-a/p/491901479",
+        "title": "Apple Leather Mobile Case with MagSafe for iPhone 12 Pro/iPhone 12, Saddle Brown MHKF3ZM/A",
+        "src": "https://www.reliancedigital.in/medias/Apple-MHKF3ZM-A-Mobile-Case-491901479-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzODYyOHxpbWFnZS9qcGVnfGltYWdlcy9oY2EvaGFhLzk0NTU2MTM1NDI0MzAuanBnfDQ5MTQxZDJiNzBjZjUxNWU2NzcyOWIwYzMyZTgwZTFkNTYzYWRhNzhiOTcwNTFjZDM2ODcyYjhkN2UwYTEwMjk",
+        "price": "5,900.00"
+      }
+    ]
+  }
+}

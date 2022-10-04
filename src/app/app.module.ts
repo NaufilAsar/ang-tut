@@ -18,11 +18,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 // Firebase
 import { AngularFireModule } from '@angular/fire/compat/';
 import { environment } from '../environments/environment';
+import { SignUpComponent } from './sign-up/sign-up.component';
 
 // Angular Material
-import { MatButtonModule } from '@angular/material/button';
-import { MatCardModule } from '@angular/material/card';
-import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -32,6 +30,7 @@ import { MatInputModule } from '@angular/material/input';
     HomePageComponent,
     ContactPageComponent,
     LoginPageComponent,
+    SignUpComponent,
   ],
   imports: [
     BrowserModule,

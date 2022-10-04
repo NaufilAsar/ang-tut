@@ -1,0 +1,40 @@
+<div class="panel"></div>
+<div style="padding: 5%; width: 90%" class="card mx-auto mt-5">
+  <form [formGroup]="signupForm" (ngSubmit)="signup()" class="form-inline">
+    <div class="d-flex justify-content-center mt-2">
+      <h1 style="font-size: 3.5rem">Sign Up</h1>
+    </div>
+    <div class="d-flex justify-content-center my-0">
+      <p class="text-secondary" style="font-size: 1.3rem">
+        To receive email notifications for products you like. Completely
+        optional.
+      </p>
+    </div>
+    <div class="col col-lg-6 col-md-9 col-sm-12 mx-auto">
+      <input
+        id="email"
+        type="text"
+        formControlName="email"
+        placeholder="Email"
+        autocomplete="on"
+        class="form-control text-center mx-auto mt-5"
+      />
+    </div>
+    <div class="col col-lg-6 col-md-9 col-sm-12 mx-auto">
+      <input
+        id="password"
+        type="password"
+        autocomplete="off"
+        formControlName="password"
+        placeholder="Password"
+        class="form-control text-center mx-auto my-3"
+      />
+    </div>
+    <div class="d-flex justify-content-center mt-3">
+      <button type="submit" class="btn btn-warning btn-md px-5">Submit</button>
+    </div>
+    <div class="d-flex justify-content-center mt-3">
+      <a routerLink="/login" class="btn btn-outline-secondary btn-sm">Login</a>
+    </div>
+  </form>
+</div>

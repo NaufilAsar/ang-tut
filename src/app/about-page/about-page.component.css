@@ -1,3 +1,47 @@
 .about-para {
   font-size: 1.3rem;
+  line-height: 1.5;
+}
+.caption {
+  font-size: 1rem;
+}
+h1 {
+  font-size: 2.5rem;
+}
+:root {
+  --sm: 576px;
+  --md: 768px;
+  --lg: 992px;
+  --xl: 1200px;
+}
+/* 
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up) */
+@media (min-width: var(--sm)) {
+  h1 {
+    font-size: 1rem;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: var(--md)) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: var(--lg)) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: var(--xl)) {
+  h1 {
+    font-size: 4rem;
+  }
 }

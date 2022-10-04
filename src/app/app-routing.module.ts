@@ -7,6 +7,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'about', component: AboutPageComponent },
   { path: 'contact', component: ContactPageComponent },
   { path: 'login', component: LoginPageComponent },
+  { path: 'signup', component: SignUpComponent },
   { path: '**', component: NotFoundPageComponent },
 ];
 

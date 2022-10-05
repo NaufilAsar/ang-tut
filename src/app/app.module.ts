@@ -14,7 +14,8 @@ import { ContactPageComponent } from './contact-page/contact-page.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { LottieModule } from 'ngx-lottie'; // add this line
+import { LottieModule } from 'ngx-lottie';
+import { AdsenseModule } from 'ng2-adsense';
 
 // Firebase
 import { AngularFireModule } from '@angular/fire/compat/';
@@ -44,6 +45,10 @@ export function playerFactory() {
     NgbModule,
     AngularFireModule.initializeApp(environment.firebase),
     LottieModule.forRoot({ player: playerFactory }), // add this line
+    AdsenseModule.forRoot({
+      adClient: 'ca-pub-1436906877990518',
+      adSlot: 8038356945,
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -34,6 +34,7 @@
     "bootstrap": "^5.2.1",
     "jquery": "^3.6.1",
     "ng-lottie": "^0.3.2",
+    "ng2-adsense": "^11.0.0",
     "ngx-bootstrap": "^9.0.0",
     "ngx-lottie": "^9.1.0",
     "popper.js": "^1.16.1",

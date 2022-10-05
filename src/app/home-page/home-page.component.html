@@ -1,27 +1,29 @@
 <!-- Display the global navbar -->
-
-<div class="main-container" style="position: relative; top: 65px">
+<div class="panel"></div>
+<div class="main-container">
   <!-- Logo Title -->
-  <div class="mt-3 mt-sm-5 mx-auto" style="width: 100px">
+  <div id="logo-title" class="mt-3 mt-sm-5 mx-auto" style="width: 100px">
     <img
+      id="logo-img"
       class="text-center"
+      style="width: 100px"
       src="assets\imgs\logo-transparent.png"
       alt="Logo"
       height="100px"
     />
-    <h1 class="mx-auto">Thrifty</h1>
+    <h1 class="mx-auto" style="font-family: 'Ubuntu'">Thrifty</h1>
   </div>
 
   <!-- Search Bar -->
-  <div class="search-container mt-1 mt-sm-3 pt-5">
-    <form class="form-inline d-flex justify-content-center gap-2">
+  <div class="search-container m-5">
+    <form class="form d-flex justify-content-center gap-0 gap-sm-2">
       <input
         id="search_box"
         type="text"
         [formControl]="search_product"
-        placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Search.."
+        placeholder="Search.."
         class="form-control text-center"
-        style="display: inline; width: 60vw"
+        style="display: inline; width: 60vw; font-family: 'Poppins'"
       />
       <button
         id="search_btn"
@@ -35,9 +37,9 @@
   </div>
 </div>
 
-<div *ngIf="resultsLoading" style="margin-top: 100px">
+<div *ngIf="resultsLoading" style="margin: 50px 0">
   <!-- display loading animation -->
-  <ng-lottie height="100px" [options]="optionsLoading"></ng-lottie>
+  <ng-lottie id="loading" height="100px" [options]="optionsLoading"></ng-lottie>
 </div>
 
 <div *ngIf="resultsLoaded" style="margin-top: 70px">
@@ -47,10 +49,30 @@
 <div class="section text-center" style="margin-top: 170px">
   <h3 class="text-secondary" style="font-family: 'Poppins'">
     We make your task to search hundreds of websites for the best price
-    <span class="text-decoration-underline">simple.</span>
+    <span
+      style="text-decoration-line: underline; text-decoration-thickness: 0.8px"
+      >simple.</span
+    >
   </h3>
   <ng-lottie height="400px" [options]="optionsThinking"></ng-lottie>
 </div>
+
+<script
+  async
+  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1436906877990518"
+  crossorigin="anonymous"
+></script>
+
+<!-- Ad Container (Waiting to be approved) -->
+<div [hidden]="true">
+  <ng-adsense
+    [adClient]="'ca-pub-1436906877990518'"
+    [adSlot]="8038356945"
+    [width]="320"
+    [height]="108"
+  ></ng-adsense>
+</div>
+
 <!-- <div class="bg-white" style="position: relative; top: 200px">
   <blockquote class="blockquote text-center">
     <p>

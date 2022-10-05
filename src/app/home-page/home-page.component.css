@@ -1,11 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+
+hr {
+  border-top: 8px dashed black;
+  width: 5vw;
+  margin: 0 auto;
+}
+
 /* @media screen and (max-width: 565px) {
-  #search_btn {
-    display: block;
-    width: 70vw;
-  }
-  #search_box {
-    display: block;
-    width: 70vw;
+  hr {
+    width: 15vw;
   }
 } */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+/* 
+@media screen and (max-width: 374px) {
+  #logo-title,
+  #search_box {
+    position: relative;
+    right: 0;
+  }
+}
+@media screen and (min-width: 786px) {
+  #logo-img {
+    position: relative;
+    left: 20px;
+  }
+}
+*/
+@media screen and (min-width: 991px) {
+  #logo-img {
+    position: relative;
+    left: 10px;
+  }
+}

@@ -39,11 +39,15 @@
 
 <div *ngIf="resultsLoading" style="margin: 50px 0">
   <!-- display loading animation -->
-  <ng-lottie id="loading" height="100px" [options]="optionsLoading"></ng-lottie>
+  <ng-lottie
+    id="loading"
+    height="100px"
+    [options]="{ path: 'assets/anim/loading.json' }"
+  ></ng-lottie>
 </div>
 
 <div *ngIf="resultsLoaded" style="margin-top: 70px">
-  <!-- <app-results-page [results]="{ name: 'naufil' }"></app-results-page> -->
+  <!-- results -->
 </div>
 
 <div class="section text-center" style="margin-top: 170px">
@@ -54,7 +58,30 @@
       >simple.</span
     >
   </h3>
-  <ng-lottie height="400px" [options]="optionsThinking"></ng-lottie>
+  <ng-lottie
+    height="300px"
+    [options]="{ path: 'assets/anim/thinking-ad.json' }"
+  ></ng-lottie>
+</div>
+
+<div class="section text-center" style="margin-top: 70px">
+  <h3 class="text-secondary" style="font-family: 'Poppins'">
+    Track Price With Historical Price Chart
+  </h3>
+  <ng-lottie
+    height="300px"
+    [options]="{ path: 'assets/anim/price-down.json' }"
+  ></ng-lottie>
+</div>
+
+<div class="section text-center" style="margin-top: 70px">
+  <h3 class="text-secondary" style="font-family: 'Poppins'">
+    All of that for free. Without your data being compromised.
+  </h3>
+  <ng-lottie
+    height="300px"
+    [options]="{ path: 'assets/anim/free-box.json' }"
+  ></ng-lottie>
 </div>
 
 <script

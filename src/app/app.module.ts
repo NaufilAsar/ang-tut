@@ -16,6 +16,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LottieModule } from 'ngx-lottie';
 import { AdsenseModule } from 'ng2-adsense';
+import { HttpClientModule } from '@angular/common/http';
 
 // Firebase
 import { AngularFireModule } from '@angular/fire/compat/';
@@ -23,8 +24,8 @@ import { environment } from '../environments/environment';
 import { SignUpComponent } from './sign-up/sign-up.component';
 
 export function playerFactory() {
-  return import('lottie-web'); // add this line
-} // add this line
+  return import('lottie-web');
+}
 
 @NgModule({
   declarations: [
@@ -43,8 +44,9 @@ export function playerFactory() {
     ReactiveFormsModule,
     FontAwesomeModule,
     NgbModule,
+    HttpClientModule,
     AngularFireModule.initializeApp(environment.firebase),
-    LottieModule.forRoot({ player: playerFactory }), // add this line
+    LottieModule.forRoot({ player: playerFactory }),
     AdsenseModule.forRoot({
       adClient: 'ca-pub-1436906877990518',
       adSlot: 8038356945,

@@ -17,13 +17,6 @@ export class HomePageComponent implements OnInit {
   resultsLoaded = false; // change to true when results loaded from API
   results: any;
 
-  optionsLoading: AnimationOptions = {
-    path: 'assets/anim/loading.json', // download the JSON version of animation in your project directory and add the path to it like ./assets/animations/example.json
-  };
-  optionsThinking: AnimationOptions = {
-    path: 'assets/anim/thinking-ad.json', // download the JSON version of animation in your project directory and add the path to it like ./assets/animations/example.json
-  };
-
   constructor(private router: Router) {}
 
   ngOnInit(): void {}

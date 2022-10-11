@@ -48,8 +48,8 @@ export function playerFactory() {
     AngularFireModule.initializeApp(environment.firebase),
     LottieModule.forRoot({ player: playerFactory }),
     AdsenseModule.forRoot({
-      adClient: 'ca-pub-1436906877990518',
-      adSlot: 8038356945,
+      adClient: 'ca-pub-8102599121469216',
+      adSlot: 1410568522,
     }),
   ],
   providers: [],

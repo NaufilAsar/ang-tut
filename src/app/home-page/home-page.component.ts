@@ -26,5 +26,7 @@ export class HomePageComponent implements OnInit {
     // Access API and display the products
     // this.router.navigate(['/results']);
     // this.resultsLoaded = true;
+
+    // this.resultsLoading = false; // turn off loading
   }
 }

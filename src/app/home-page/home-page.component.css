@@ -34,3 +34,8 @@ hr {
     left: 10px;
   }
 }
+
+.underlined {
+  text-decoration-line: underline;
+  text-decoration-thickness: 0.8px;
+}

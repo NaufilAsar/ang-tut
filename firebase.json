@@ -1,6 +1,10 @@
 {
   "hosting": {
-    "public": "dist\\major-test-2",
-    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+    "public": "dist/major-test-2",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
   }
 }

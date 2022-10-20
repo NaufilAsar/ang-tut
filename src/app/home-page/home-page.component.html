@@ -48,9 +48,54 @@
 
 <div *ngIf="resultsLoaded" style="margin-top: 70px">
   <!-- results -->
+  <div *ngFor="let product of results">
+    <!-- <div class="card" style="width: 18rem">
+      <img src="{{ product.imgs }}" alt="image" height="200px" width="200px" />
+      <div class="card-body">
+        <h5 class="card-title">{{ product.titles }}</h5>
+        <p class="card-text">
+          {{ product.prices }}
+        </p>
+        <span class="badge rounded-pill bg-warning text-dark">{{
+          product.site
+        }}</span>
+        <a href="{{ product.urls }}" class="btn btn-primary">Link</a>
+      </div>
+    </div> -->
+
+    <div
+      class="card mx-auto my-5 mx-5"
+      style="padding: 5%; width: 90%; margin-bottom: 50px"
+    >
+      <img
+        src="{{ product.imgs }}"
+        alt="{{ product.titles }}"
+        height="200px"
+        width="200px"
+      />
+
+      <div class="card-body">
+        <div class="card-title">
+          <h5 class="card-title">{{ product.titles }}</h5>
+        </div>
+        {{ "₹" + product["prices"] }}
+        <span
+          class="badge rounded-pill text-white m-3"
+          [ngClass]="{
+            'bg-warning': product.site == 'amazon',
+            'bg-primary': product.site == 'flipkart',
+            'bg-success': product.site == 'reliance'
+          }"
+          style="font-size: 1rem; font-weight: 400"
+          >{{ product.site }}</span
+        >
+        <a href="{{ product.urls }}" class="btn btn-sm btn-primary">Link</a>
+      </div>
+    </div>
+  </div>
 </div>
 
-<div class="animations">
+<div class="animations" [hidden]="hideAnimations">
   <div class="section text-center" style="margin-top: 100px">
     <h3 class="text-secondary px-sm-2" style="font-family: 'Poppins'">
       We make your task to search hundreds of websites for the best price

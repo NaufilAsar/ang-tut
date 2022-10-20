@@ -2,11 +2,11 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
 
-hr {
-  border-top: 8px dashed black;
+/* hr {
+  border-top: 1px solid white;
   width: 5vw;
-  margin: 0 auto;
-}
+  margin: 10px auto;
+} */
 
 /* @media screen and (max-width: 565px) {
   hr {

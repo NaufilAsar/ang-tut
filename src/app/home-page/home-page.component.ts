@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { Router } from '@angular/router';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
-import { AnimationOptions } from 'ngx-lottie';
 import { GetProductsApiService } from '../services/get-products-api.service';
 import { Title } from '@angular/platform-browser';
 
@@ -15,9 +14,10 @@ export class HomePageComponent implements OnInit {
   search_product = new FormControl(''); // search bar
   search_icon = faMagnifyingGlass; // search icon
   apiUrl = 'https://jsonplaceholder.typicode.com/todos/1';
-  resultsLoading = false;
+  displayLoadingAnimation = false;
   resultsLoaded = false; // change to true when results loaded from API
-  hideAnimations = this.resultsLoaded;
+  hideSectionAnimations = this.resultsLoaded;
+  gotError = false; // if error when loading results
   results: any;
 
   constructor(
@@ -30,22 +30,29 @@ export class HomePageComponent implements OnInit {
 
   ngOnInit(): void {}
   onClickSearch() {
+    this.gotError = false;
     console.log('User entered: ' + this.search_product.value);
     // display loading animation
-    this.resultsLoading = true;
+    this.displayLoadingAnimation = true;
     // Access API and display the products
     var url =
       'https://thrifty-api-next-darkkernel-dev.apps.sandbox.x8i5.p1.openshiftapps.com/results?product=' +
       this.search_product.value;
-    console.log(url);
-    // this.router.navigate(['/results']);
-    this.api.getProducts(url).subscribe((products) => {
-      this.results = products;
-      console.log(products);
-      this.resultsLoaded = true;
-      this.hideAnimations = true;
-      this.resultsLoading = false; // turn off loading animation
-    });
+    this.api.getProducts(url).subscribe(
+      (products) => {
+        this.results = products;
+        console.log(products);
+        this.resultsLoaded = true;
+        this.hideSectionAnimations = true;
+        this.displayLoadingAnimation = false; // turn off loading animation
+      },
+      (error) => {
+        console.log('oops', error);
+        this.gotError = true;
+        this.hideSectionAnimations = true;
+        this.displayLoadingAnimation = false;
+      }
+    );
   }
 }
 /* 

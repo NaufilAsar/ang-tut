@@ -46,76 +46,39 @@
   ></ng-lottie>
 </div>
 
-<div *ngIf="resultsLoaded" style="margin-top: 70px">
+<div *ngIf="resultsLoaded" style="margin-top: 70px mx-auto">
   <!-- results -->
-  <div *ngFor="let product of results" class="mx-auto text-center p-5 row g-1">
-    <div>
-      <div class="col-md-6 col-lg-4">
-        <div class="card p-3">
-          <div class="card-body">
-            <img
-              src="{{ product.imgs }}"
-              alt="{{ product.titles }}"
-              style="
-                max-width: 230px;
-                max-height: 95px;
-                width: auto;
-                height: auto;
-              "
-            />
-            <h5 class="card-title my-2">{{ product.titles }}</h5>
-            <h6 class="card-text">{{ "₹" + product["prices"] }}</h6>
-            <p class="card-text my-4">
-              <span
-                class="badge rounded-pill text-white m-3"
-                [ngClass]="{
-                  'bg-warning': product.site == 'amazon',
-                  'bg-primary': product.site == 'flipkart',
-                  'bg-success': product.site == 'reliance'
-                }"
-                style="font-size: 1rem; font-weight: 400"
-                >{{ product.site }}</span
-              >
-              <a href="{{ product.urls }}" class="btn btn-sm btn-primary"
-                >Link</a
-              >
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- 
+  <div class="row">
     <div
-      class="card mx-auto my-5 mx-5"
-      style="padding: 5%; width: 90%; margin-bottom: 50px"
+      *ngFor="let product of results"
+      class="p-3 card text-center col-sm-12 col-md-6 col-lg-3"
+      style="margin: 1rem"
     >
       <img
+        class="p-3"
         src="{{ product.imgs }}"
         alt="{{ product.titles }}"
-        height="200px"
-        width="150px"
+        style="max-width: 100px; max-height: 150px; width: auto; height: auto"
       />
-
-      <div class="card-body">
-        <div class="card-title">
-          <h5 class="card-title">{{ product.titles }}</h5>
-        </div>
-        {{ "₹" + product["prices"] }}
-        <span
-          class="badge rounded-pill text-white m-3"
-          [ngClass]="{
-            'bg-warning': product.site == 'amazon',
-            'bg-primary': product.site == 'flipkart',
-            'bg-success': product.site == 'reliance'
-          }"
-          style="font-size: 1rem; font-weight: 400"
-          >{{ product.site }}</span
-        >
-        <a href="{{ product.urls }}" class="btn btn-sm btn-primary">Link</a>
-      </div>
-    </div> -->
+      <span class="card-title my-2">{{ product.titles }}</span>
+      <span class="card-text">{{ "₹" + product["prices"] }}</span>
+      <span
+        class="badge rounded-pill text-white m-3"
+        [ngClass]="{
+          'bg-warning': product.site == 'amazon',
+          'bg-primary': product.site == 'flipkart',
+          'bg-success': product.site == 'reliance'
+        }"
+        style="font-size: 1rem; font-weight: 400; width: 5rem"
+        >{{ product.site }}</span
+      >
+      <a href="{{ product.urls }}" style="width: 5rem" class="btn btn-primary"
+        >Link</a
+      >
+    </div>
   </div>
 </div>
+
 <div
   *ngIf="gotError"
   class="section text-center"

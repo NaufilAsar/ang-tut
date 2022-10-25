@@ -36,7 +36,7 @@ export class HomePageComponent implements OnInit {
     this.displayLoadingAnimation = true;
     // Access API and display the products
     var url =
-      'http://52.207.101.56:8080/results?product=' + this.search_product.value;
+      'http://52.55.7.79:8080/results?product=' + this.search_product.value;
     this.api.getProducts(url).subscribe(
       (products) => {
         this.results = products;

@@ -7,6 +7,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
+import { PriceInfoPageComponent } from './price-info-page/price-info-page.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 
 const routes: Routes = [
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'contact', component: ContactPageComponent },
   { path: 'login', component: LoginPageComponent },
   { path: 'signup', component: SignUpComponent },
+  { path: 'price-info', component: PriceInfoPageComponent },
   { path: '**', component: NotFoundPageComponent },
 ];
 

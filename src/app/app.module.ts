@@ -23,6 +23,7 @@ import { AngularFireModule } from '@angular/fire/compat/';
 import { environment } from '../environments/environment';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { FooterComponent } from './footer/footer.component';
+import { PriceInfoPageComponent } from './price-info-page/price-info-page.component';
 
 export function playerFactory() {
   return import('lottie-web');
@@ -38,6 +39,7 @@ export function playerFactory() {
     LoginPageComponent,
     SignUpComponent,
     FooterComponent,
+    PriceInfoPageComponent,
   ],
   imports: [
     BrowserModule,

@@ -48,33 +48,68 @@
 
 <div *ngIf="resultsLoaded" style="margin-top: 70px mx-auto">
   <!-- results -->
-  <div class="row">
+  <div class="row" style="display: flex; justify-content: space-evenly">
     <div
       *ngFor="let product of results"
-      class="p-3 card text-center col-sm-12 col-md-6 col-lg-3"
-      style="margin: 1rem"
+      class="card text-center col-auto"
+      style="padding: 0.6rem; margin: 1.3rem"
     >
-      <img
-        class="p-3"
-        src="{{ product.imgs }}"
-        alt="{{ product.titles }}"
-        style="max-width: 100px; max-height: 150px; width: auto; height: auto"
-      />
-      <span class="card-title my-2">{{ product.titles }}</span>
-      <span class="card-text">{{ "₹" + product["prices"] }}</span>
-      <span
-        class="badge rounded-pill text-white m-3"
-        [ngClass]="{
-          'bg-warning': product.site == 'amazon',
-          'bg-primary': product.site == 'flipkart',
-          'bg-success': product.site == 'reliance'
-        }"
-        style="font-size: 1rem; font-weight: 400; width: 5rem"
-        >{{ product.site }}</span
-      >
-      <a href="{{ product.urls }}" style="width: 5rem" class="btn btn-primary"
-        >Link</a
-      >
+      <div style="width: 20rem" class="p-3">
+        <img
+          class="p-3"
+          src="{{ product.imgs }}"
+          alt="{{ product.titles }}"
+          loading="lazy"
+          style="
+            max-width: 100px;
+            max-height: 150px;
+            width: auto;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+          "
+        />
+        <span class="card-title my-3" style="display: block">{{
+          product.titles
+        }}</span>
+        <span
+          class="badge badge rounded-pill text-white"
+          [ngClass]="{
+            'bg-warning': product.site == 'amazon',
+            'bg-primary': product.site == 'flipkart',
+            'bg-success': product.site == 'reliance'
+          }"
+          style="
+            margin-right: 1rem;
+            font-size: 1rem;
+            font-weight: 400;
+            width: 5rem;
+            display: inline-block;
+          "
+          >{{ product.site }}</span
+        >
+        <span
+          class="card-text my-2"
+          style="color: #379237; font-size: 1.3rem"
+          >{{ "₹" + product.prices }}</span
+        >
+        <div style="width: 15rem" class="mx-auto mt-2">
+          <a
+            style="display: inline-block; padding: 0.3rem; margin-top: -1px"
+            class="btn btn-primary ms-2 mt-3"
+            (click)="onClickViewPriceHistory(product, this.results)"
+            >View price history</a
+          >
+        </div>
+        <div style="width: 15rem" class="mx-auto mt-2">
+          <a
+            style="display: inline-block; padding: 0.3rem; margin-top: -1px"
+            class="btn btn-primary ms-2 mt-3"
+            href="{{ product.urls }}"
+            >Buy Product</a
+          >
+        </div>
+      </div>
     </div>
   </div>
 </div>

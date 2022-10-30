@@ -29,7 +29,7 @@ export class HomePageComponent implements OnInit {
     private title: Title,
     private activatedRoute: ActivatedRoute
   ) {
-    title.setTitle('Thrifty - Home');
+    title.setTitle('Home - Trhifty');
   }
 
   ngOnInit(): void {

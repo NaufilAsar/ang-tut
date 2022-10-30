@@ -5,6 +5,7 @@ import { Router } from '@angular/router';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
 import { AuthService } from '../services/auth.service';
 import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
+import { Title } from '@angular/platform-browser';
 @Component({
   selector: 'app-logout-page',
   templateUrl: './logout-page.component.html',
@@ -24,10 +25,12 @@ export class LogoutPageComponent implements OnInit {
   firebaseErrorMessage: string = '';
 
   constructor(
+    private title: Title,
     private authService: AuthService,
     private router: Router,
     private afAuth: AngularFireAuth
   ) {
+    title.setTitle('Logout - Thrifty');
     this.loginForm = new FormGroup({
       email: new FormControl('', [Validators.required, Validators.email]),
       password: new FormControl('', Validators.required),

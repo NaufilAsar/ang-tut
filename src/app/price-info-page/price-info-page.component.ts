@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgChartsModule } from 'ng2-charts';
 import { ChartConfiguration, ChartOptions, ChartType } from 'chart.js';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-price-info-page',
@@ -27,8 +28,8 @@ export class PriceInfoPageComponent implements OnInit {
     'November 2022',
     'December 2022',
   ];
-
-  constructor() {
+  constructor(private title: Title) {
+    title.setTitle('Product - Thrifty');
     this.lineChartData = {
       labels: this.months,
       datasets: [

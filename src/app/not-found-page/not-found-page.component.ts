@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { AnimationOptions } from 'ngx-lottie';
 
 @Component({
@@ -10,7 +11,9 @@ export class NotFoundPageComponent implements OnInit {
   optionsError: AnimationOptions = {
     path: 'assets/anim/error-404.json',
   };
-  constructor() {}
+  constructor(private title: Title) {
+    title.setTitle('Not Found - Thrifty');
+  }
 
   ngOnInit(): void {}
 }

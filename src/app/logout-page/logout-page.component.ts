@@ -1,16 +1,16 @@
 import { Component, OnInit } from '@angular/core';
+
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
 import { AuthService } from '../services/auth.service';
 import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
-
 @Component({
-  selector: 'app-login-page',
-  templateUrl: './login-page.component.html',
-  styleUrls: ['./login-page.component.css'],
+  selector: 'app-logout-page',
+  templateUrl: './logout-page.component.html',
+  styleUrls: ['./logout-page.component.css'],
 })
-export class LoginPageComponent implements OnInit {
+export class LogoutPageComponent implements OnInit {
   display = 'none';
 
   openModal() {
@@ -33,6 +33,7 @@ export class LoginPageComponent implements OnInit {
       password: new FormControl('', Validators.required),
     });
   }
+
   wait(ms: number) {
     var start = new Date().getTime();
     var end = start;
@@ -50,26 +51,13 @@ export class LoginPageComponent implements OnInit {
   }
   closePopup() {
     this.displayStyle = 'none';
+    this.wait(300);
+    this.router.navigate(['login']);
   }
-  loginUser() {
-    // if (this.loginForm.invalid) return;
-
-    this.authService
-      .loginUser(this.loginForm.value.email, this.loginForm.value.password)
-      .then((result) => {
-        if (result == null) {
-          // null is success, false means there was an error
-          console.log('logging in...');
-          localStorage.setItem('isUserLoggedIn', 'true');
-          // show a pop up
-          // wait
-          this.wait(5000); // 5 seconds
-          this.router.navigate(['/home']); // when the user is logged in, navigate them to dashboard
-        } else if (result.isValid == false) {
-          console.log('login error', result);
-          localStorage.setItem('isUserLoggedIn', 'false');
-          this.firebaseErrorMessage = result.message;
-        }
-      });
+  logoutUser() {
+    if (localStorage.getItem('isUserLoggedIn') == 'true') {
+      this.authService.logoutUser();
+      this.openPopup();
+    }
   }
 }

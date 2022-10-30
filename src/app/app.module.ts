@@ -17,6 +17,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LottieModule } from 'ngx-lottie';
 import { AdsenseModule } from 'ng2-adsense';
 import { HttpClientModule } from '@angular/common/http';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 // Firebase
 import { AngularFireModule } from '@angular/fire/compat/';
@@ -24,6 +25,8 @@ import { environment } from '../environments/environment';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { FooterComponent } from './footer/footer.component';
 import { PriceInfoPageComponent } from './price-info-page/price-info-page.component';
+import { NgChartsModule } from 'ng2-charts';
+import { LogoutPageComponent } from './logout-page/logout-page.component';
 
 export function playerFactory() {
   return import('lottie-web');
@@ -40,6 +43,7 @@ export function playerFactory() {
     SignUpComponent,
     FooterComponent,
     PriceInfoPageComponent,
+    LogoutPageComponent,
   ],
   imports: [
     BrowserModule,
@@ -49,12 +53,15 @@ export function playerFactory() {
     FontAwesomeModule,
     NgbModule,
     HttpClientModule,
+    NgChartsModule,
+    NgxPaginationModule,
     AngularFireModule.initializeApp(environment.firebase),
     LottieModule.forRoot({ player: playerFactory }),
     AdsenseModule.forRoot({
       adClient: 'ca-pub-8102599121469216',
       adSlot: 1410568522,
     }),
+    NgChartsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

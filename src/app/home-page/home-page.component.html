@@ -1,3 +1,12 @@
+<style>
+  @media only screen and (max-width: 500px) {
+    /* change animation size on small screens */
+    .anim {
+      height: 200px;
+    }
+  }
+</style>
+
 <!-- Display the global navbar -->
 <div class="panel"></div>
 <div class="main-container">
@@ -37,6 +46,23 @@
   </div>
 </div>
 
+<div [hidden]="hideSectionAnimations">
+  <h3 class="text-secondary px-sm-2 text-center" style="font-family: 'Poppins'">
+    We are thrifty because
+  </h3>
+  <div class="d-flex justify-content-center m-5">
+    <blockquote class="blockquote card p-4" style="display: inline-block">
+      <p style="font-family: Arial, Helvetica, sans-serif">
+        thrifty means showing a careful use of money, especially by avoiding
+        waste
+      </p>
+      <footer class="blockquote-footer">
+        <cite title="Source Title">Cambridge Dictionary</cite>
+      </footer>
+    </blockquote>
+  </div>
+</div>
+
 <div *ngIf="displayLoadingAnimation" style="margin: 50px 0">
   <!-- display loading animation -->
   <ng-lottie
@@ -48,68 +74,109 @@
 
 <div *ngIf="resultsLoaded" style="margin-top: 70px mx-auto">
   <!-- results -->
+  <div *ngIf="!usingParams">
+    <h3 style="margin-left: 30px">
+      Showing {{ this.results.length }} results for "{{
+        this.search_product.value
+      }}"
+    </h3>
+  </div>
+  <div *ngIf="usingParams">
+    <h3 style="margin-left: 30px">
+      Showing {{ this.results.length }} results for "{{ this.productName }}"
+    </h3>
+  </div>
+
   <div class="row" style="display: flex; justify-content: space-evenly">
     <div
-      *ngFor="let product of results"
-      class="card text-center col-auto"
-      style="padding: 0.6rem; margin: 1.3rem"
+      *ngFor="
+        let product of results | paginate: { itemsPerPage: 30, currentPage: p };
+        let i = index
+      "
+      class="text-center col-auto bg-white"
+      style="
+        border-radius: 10px;
+        padding: 0.6rem;
+        margin: 1.3rem;
+        box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
+          rgba(17, 17, 26, 0.05) 0px 8px 32px;
+      "
     >
-      <div style="width: 20rem" class="p-3">
-        <img
-          class="p-3"
-          src="{{ product.imgs }}"
-          alt="{{ product.titles }}"
-          loading="lazy"
-          style="
-            max-width: 100px;
-            max-height: 150px;
-            width: auto;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-          "
-        />
-        <span class="card-title my-3" style="display: block">{{
-          product.titles
-        }}</span>
-        <span
-          class="badge badge rounded-pill text-white"
-          [ngClass]="{
-            'bg-warning': product.site == 'amazon',
-            'bg-primary': product.site == 'flipkart',
-            'bg-success': product.site == 'reliance'
-          }"
-          style="
-            margin-right: 1rem;
-            font-size: 1rem;
-            font-weight: 400;
-            width: 5rem;
-            display: inline-block;
-          "
-          >{{ product.site }}</span
-        >
-        <span
-          class="card-text my-2"
-          style="color: #379237; font-size: 1.3rem"
-          >{{ "₹" + product.prices }}</span
-        >
-        <div style="width: 15rem" class="mx-auto mt-2">
-          <a
-            style="display: inline-block; padding: 0.3rem; margin-top: -1px"
-            class="btn btn-primary ms-2 mt-3"
-            (click)="onClickViewPriceHistory(product, this.results)"
-            >View price history</a
+      <!-- Display only complete info products -->
+      <div
+        *ngIf="
+          product.urls != undefined &&
+          product.imgs != undefined &&
+          product.site != undefined &&
+          product.titles != undefined &&
+          product.prices != undefined
+        "
+      >
+        <div style="width: 20rem" class="p-3">
+          <img
+            class="p-3"
+            src="{{ product.imgs }}"
+            alt="{{ product.titles }}"
+            loading="lazy"
+            style="
+              max-width: 100px;
+              max-height: 150px;
+              width: auto;
+              height: auto;
+              display: block;
+              margin: 0 auto;
+            "
+          />
+          <span class="card-title my-3" style="display: block">{{
+            product.titles
+          }}</span>
+          <span
+            class="badge badge rounded-pill text-white"
+            [ngClass]="{
+              'bg-warning': product.site == 'amazon',
+              'bg-primary': product.site == 'flipkart',
+              'bg-success': product.site == 'reliance',
+              'bg-dark': product.site == 'shopclues'
+            }"
+            style="
+              margin-right: 1rem;
+              font-size: 1rem;
+              font-weight: 400;
+              width: 6rem;
+              display: inline-block;
+            "
+            >{{ product.site }}</span
           >
-        </div>
-        <div style="width: 15rem" class="mx-auto mt-2">
-          <a
-            style="display: inline-block; padding: 0.3rem; margin-top: -1px"
-            class="btn btn-primary ms-2 mt-3"
-            href="{{ product.urls }}"
-            >Buy Product</a
+          <span
+            class="card-text my-2"
+            style="color: #379237; font-size: 1.3rem"
+            >{{ "₹" + product.prices }}</span
           >
+          <div style="width: 15rem" class="mx-auto">
+            <a
+              style="display: inline-block; padding: 0.3rem; margin-top: -1px"
+              class="btn btn-primary ms-2 mt-3"
+              (click)="onClickViewPriceHistory(product, this.results)"
+              >View price history</a
+            >
+          </div>
+          <div style="width: 15rem" class="mx-auto">
+            <a
+              style="display: inline-block; padding: 0.3rem; margin-top: -1px"
+              class="btn btn-primary ms-2 mt-3"
+              href="{{ product.urls }}"
+              >Buy Product</a
+            >
+          </div>
         </div>
       </div>
+    </div>
+
+    <div class="d-flex justify-content-center my-3">
+      <pagination-controls
+        [maxSize]="9"
+        (pageChange)="p = $event"
+      ></pagination-controls>
     </div>
   </div>
 </div>
@@ -120,6 +187,7 @@
   style="margin-top: 50px; margin-bottom: 100px"
 >
   <ng-lottie
+    class="anim"
     height="300px"
     [options]="{ path: 'assets/anim/api-error.json' }"
   ></ng-lottie>
@@ -132,12 +200,13 @@
 </div>
 
 <div class="animations" [hidden]="hideSectionAnimations">
-  <div class="section text-center" style="margin-top: 100px">
+  <div class="section text-center" style="margin-top: 80px">
     <h3 class="text-secondary px-sm-2" style="font-family: 'Poppins'">
       We make your task to search hundreds of websites for the best price
       <span class="underlined">simple.</span>
     </h3>
     <ng-lottie
+      class="anim"
       height="300px"
       [options]="{ path: 'assets/anim/thinking-ad.json' }"
     ></ng-lottie>
@@ -148,6 +217,7 @@
       <span class="underlined">Track</span> Price With Historical Price Chart
     </h3>
     <ng-lottie
+      class="anim"
       height="300px"
       [options]="{ path: 'assets/anim/price-down.json' }"
     ></ng-lottie>
@@ -159,6 +229,7 @@
       being compromised.
     </h3>
     <ng-lottie
+      class="anim"
       height="300px"
       [options]="{ path: 'assets/anim/free-box.json' }"
     ></ng-lottie>

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Params, Router } from '@angular/router';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { GetProductsApiService } from '../services/get-products-api.service';
 import { Title } from '@angular/platform-browser';
@@ -11,32 +11,53 @@ import { Title } from '@angular/platform-browser';
   styleUrls: ['./home-page.component.css'],
 })
 export class HomePageComponent implements OnInit {
+  p: number = 1;
   search_product = new FormControl(''); // search bar
   search_icon = faMagnifyingGlass; // search icon
-  apiUrl = 'https://jsonplaceholder.typicode.com/todos/1';
+  apiUrl = 'https://thrifty-one.vercel.app/results?product=';
   displayLoadingAnimation = false;
   resultsLoaded = false; // change to true when results loaded from API
   hideSectionAnimations = this.resultsLoaded;
   gotError = false; // if error when loading results
   results: any;
+  usingParams = false;
+  productName = '';
 
   constructor(
     private router: Router,
     private api: GetProductsApiService,
-    private title: Title
+    private title: Title,
+    private activatedRoute: ActivatedRoute
   ) {
     title.setTitle('Thrifty - Home');
   }
 
   ngOnInit(): void {
     // this.developmentAutoClick();
+    this.activatedRoute.queryParams.subscribe((params: Params) => {
+      if (Object.keys(params).length === 0) {
+        console.log('no params found');
+      } else {
+        console.log(params['category']);
+        // reslove params
+        let search_bar = <HTMLInputElement>(
+          document.getElementById('search_box')
+        );
+        if (search_bar) {
+          search_bar.value = this.productName = params['category'];
+          this.usingParams = true;
+          this.onClickSearch();
+        }
+      }
+    });
   }
 
   developmentAutoClick() {
     this.gotError = false;
+    this.results = [];
     this.displayLoadingAnimation = true;
     var local_url = 'http://localhost:8080/results?data=iphone';
-    var url = 'https://tender-grass-55002.pktriot.net/results?data=iphone';
+    var url = 'https://thrifty-one.vercel.app/results?product=iphone';
     this.api.getProducts(local_url).subscribe({
       next: (products) => {
         this.results = products;
@@ -62,15 +83,12 @@ export class HomePageComponent implements OnInit {
     this.displayLoadingAnimation = true;
     // Access API and display the products
     var local_url =
-      'http://localhost:8080/results?data=' + this.search_product.value;
-    var url =
-      'https://thrifty-one.vercel.app/results?product=' +
-      this.search_product.value;
-    // var url =
-    //   'https://tender-grass-55002.pktriot.net/results?data=' +
-    //   this.search_product.value;
+      'http://localhost:8080/results?data=' +
+      this.search_product.value?.replace(' ', '_');
+    var url = this.apiUrl + this.search_product.value?.replace(' ', '_');
     this.api.getProducts(url).subscribe({
       next: (products) => {
+        this.results = [];
         this.results = products;
         console.log(products);
         this.resultsLoaded = true;

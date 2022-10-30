@@ -19,7 +19,7 @@
       aria-controls="navbarSupportedContent"
       aria-expanded="false"
       aria-label="Toggle navigation"
-      (click)="collapsed = !this.collapsed"
+      (click)="this.collapsed = !this.collapsed"
     >
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -30,20 +30,40 @@
       <!-- right nav menus -->
       <ul class="navbar-nav">
         <li routerLinkActive="active" class="nav-item">
-          <a routerLink="/home" class="nav-link">Home</a>
+          <a
+            routerLink="/home"
+            (click)="onNavLinkClick('/home')"
+            class="nav-link"
+            >Home</a
+          >
         </li>
         <li routerLinkActive="active" class="nav-item">
-          <a routerLink="/contact" class="nav-link">Contact</a>
+          <a
+            routerLink="/contact"
+            (click)="onNavLinkClick('/contact')"
+            class="nav-link"
+            >Contact</a
+          >
         </li>
         <li routerLinkActive="active" class="nav-item">
-          <a routerLink="/about" class="nav-link">About</a>
+          <a
+            routerLink="/about"
+            (click)="onNavLinkClick('/about')"
+            class="nav-link"
+            >About</a
+          >
         </li>
         <li
           routerLinkActive="active"
           class="nav-item"
           style="margin-right: 10px"
         >
-          <a routerLink="/login" class="nav-link">Login</a>
+          <a
+            routerLink="/login"
+            (click)="onNavLinkClick('/login')"
+            class="nav-link"
+            >Login</a
+          >
         </li>
         <div ngbDropdown class="d-inline-block">
           <button
@@ -55,11 +75,21 @@
             Search By Category
           </button>
           <div ngbDropdownMenu aria-labelledby="categoryDropdown">
-            <button ngbDropdownItem>Computers</button>
-            <button ngbDropdownItem>Fashion</button>
-            <button ngbDropdownItem>Sports</button>
-            <button ngbDropdownItem>Appliances</button>
-            <button ngbDropdownItem>Health</button>
+            <button ngbDropdownItem (click)="onCategoryClick('Computer')">
+              Computers
+            </button>
+            <button ngbDropdownItem (click)="onCategoryClick('Fashion')">
+              Fashion
+            </button>
+            <button ngbDropdownItem (click)="onCategoryClick('Sports')">
+              Sports
+            </button>
+            <button ngbDropdownItem (click)="onCategoryClick('Appliances')">
+              Appliances
+            </button>
+            <button ngbDropdownItem (click)="onCategoryClick('Health')">
+              Health
+            </button>
           </div>
         </div>
       </ul>

@@ -21,7 +21,7 @@ export class HomePageComponent implements OnInit {
   gotError = false; // if error when loading results
   results: any;
   usingParams = false;
-  productName = '';
+  productName: string | null = '';
 
   constructor(
     private router: Router,
@@ -39,7 +39,7 @@ export class HomePageComponent implements OnInit {
     return res;
   }
   ngOnInit(): void {
-    this.developmentAutoClick();
+    // this.developmentAutoClick();
     this.resolveIfCategoryFound();
   }
 
@@ -79,8 +79,10 @@ export class HomePageComponent implements OnInit {
           } else if (params['category'] === 'Health') {
             categoryArray = ['Protein Powder', 'Dumbells', 'Sportswear'];
           }
-          for (let category of categoryArray) {
-            this.fetchProducts(category, true);
+          for (let i = 0; i < categoryArray.length; i++) {
+            console.log(categoryArray);
+            if (i == 0) this.fetchProducts(categoryArray[i], true, true);
+            this.fetchProducts(categoryArray[i], true, false);
           }
         }
       }
@@ -89,7 +91,7 @@ export class HomePageComponent implements OnInit {
 
   developmentAutoClick() {
     this.onClickSearch();
-    this.fetchProducts('iphone');
+    this.fetchProducts('iphone', false, false);
   }
 
   onClickSearch() {
@@ -97,16 +99,23 @@ export class HomePageComponent implements OnInit {
     console.log('User entered: ' + this.search_product.value);
     this.displayLoadingAnimation = true; // display loading animation
     // Access API and display the products
-    this.fetchProducts(this.search_product.value);
+    this.fetchProducts(this.search_product.value, false, false);
     this.productName != this.search_product.value;
   }
 
-  fetchProducts(item: string | null, ifCategory: Boolean = false) {
+  fetchProducts(
+    item: string | null,
+    ifCategory: Boolean = false,
+    refeshCategory: Boolean = false
+  ) {
     let url = this.apiUrl + item?.replace(' ', '_');
     this.api.getProducts(url).subscribe({
       next: (products) => {
-        if (ifCategory) this.results = products;
-        else this.results.push(products);
+        if (!ifCategory) this.productName = item;
+        if (!ifCategory || refeshCategory) {
+          this.results = [];
+          this.results = products;
+        } else this.results.push(products);
         this.results = this.results.filter((x: any) => {
           return (
             x.imgs != undefined &&
@@ -133,7 +142,6 @@ export class HomePageComponent implements OnInit {
 
   onClickViewPriceHistory(data: Object, suggestions: Object[]): void {
     console.log(data);
-
     // save product to local storage
     localStorage.setItem('product', JSON.stringify(data));
     let indexes = this.results[Math.floor(Math.random() * this.results.length)];

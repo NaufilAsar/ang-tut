@@ -13,7 +13,7 @@ export class PriceInfoPageComponent implements OnInit {
   lineChartData: ChartConfiguration<'line'>['data'];
   lineChartOptions: ChartOptions<'line'>;
   lineChartLegend: boolean;
-  priceData = [65, 59, 80, 81, 56, 55, 40, 65, 59, 80, 81, 56];
+  priceData: number[] = [];
   months = [
     'January 2022',
     'February 2022',
@@ -37,7 +37,7 @@ export class PriceInfoPageComponent implements OnInit {
           data: this.priceData,
           label: 'Price Information',
           fill: true,
-          tension: 0,
+          tension: 0.5,
           borderColor: 'black',
           backgroundColor: 'rgb(166, 177, 225, 0.3)',
         },
@@ -56,20 +56,25 @@ export class PriceInfoPageComponent implements OnInit {
     let currentMonth = new Date().toLocaleString('en-us', { month: 'long' });
     let currentMonthNumber = new Date().getMonth() + 1;
     // get current month and display prices till the current month
-    this.months = this.months.splice(currentMonthNumber);
+    this.months.splice(currentMonthNumber);
     // data should be only as long as no of months
-
     console.log(currentMonth + ' ' + currentMonthNumber);
     console.log(this.months);
+
     this.calculatePricesForMonth();
   }
   onChartHover() {}
   calculatePricesForMonth() {
-    let result = this.months;
-    for (let i = 0; i < result.length; i++) {
-      this.product.prices.replace('₹', '');
-      console.log(this.product.prices);
-      console.log(Math.random());
+    let price = parseInt(
+      this.product.prices.toLocaleString().replace('₹', '').replace(',', '')
+    );
+    console.log(typeof price);
+    let result = this.months; // priceData
+    for (let i = 0; i < this.months.length; i++) {
+      if (i == 4) this.priceData[i] = Math.ceil(price + price * 0.1);
+      this.priceData[i] = price;
     }
+    // this.priceData = [price];
+    console.log(this.priceData);
   }
 }

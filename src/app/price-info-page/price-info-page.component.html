@@ -1,11 +1,11 @@
 <div class="panel"></div>
 
+<hr />
 <div class="text-center">
   <p class="my-2">Price History of</p>
   <h3>
     {{ this.product.titles }}
   </h3>
-  <hr />
 
   <img
     loading="lazy"
@@ -21,8 +21,7 @@
   />
 
   <div class="mt-3">
-    <p>Current Price*: {{ product.prices }}</p>
-    <p>MRP*: ₹ {{ product.mrp }}</p>
+    <p>Current Price* {{ product.prices }}</p>
   </div>
   <div>
     <a
@@ -42,7 +41,9 @@
 
 <hr />
 
-<p class="mx-4">Price History Chart:</p>
+<h3 style="font-family: 'Poppins'" class="text-center mx-4">
+  Price History Chart:
+</h3>
 <div class="mx-auto my-4" style="display: block; width: 90vw; max-width: 500px">
   <canvas
     baseChart
@@ -57,5 +58,18 @@
 
 <hr />
 
-<p>Create a price drop email Alert:</p>
-<p></p>
+<div class="text-center">
+  <h3 style="font-family: 'Poppins'" class="my-2">
+    Create a price drop email alert for this product:
+  </h3>
+  <input
+    type="email"
+    name="email"
+    id="contact_form_email"
+    class="contact_form_email input_field text-secondary cool-box-shadow mt-4"
+    placeholder="Your email"
+    required="required"
+    data-error="Email is required."
+  />
+  <hr />
+</div>

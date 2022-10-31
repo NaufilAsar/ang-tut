@@ -74,18 +74,10 @@
 
 <div *ngIf="resultsLoaded" style="margin-top: 70px mx-auto">
   <!-- results -->
-  <div *ngIf="!usingParams">
-    <h3 style="margin-left: 30px">
-      Showing {{ this.results.length }} results for "{{
-        this.search_product.value
-      }}"
-    </h3>
-  </div>
-  <div *ngIf="usingParams">
-    <h3 style="margin-left: 30px">
-      Showing {{ this.results.length }} results for "{{ this.productName }}"
-    </h3>
-  </div>
+
+  <h3 style="margin-left: 30px">
+    Showing {{ this.results.length }} results for "{{ this.productName }}"
+  </h3>
 
   <div class="row" style="display: flex; justify-content: space-evenly">
     <div
@@ -103,81 +95,72 @@
       "
     >
       <!-- Display only complete info products -->
-      <div
-        *ngIf="
-          product.urls != undefined &&
-          product.imgs != undefined &&
-          product.site != undefined &&
-          product.titles != undefined &&
-          product.prices != undefined
-        "
-      >
-        <div style="width: 20rem" class="p-3">
-          <img
-            class="p-3"
-            src="{{ product.imgs }}"
-            alt="{{ product.titles }}"
-            loading="lazy"
-            style="
-              max-width: 100px;
-              max-height: 150px;
-              width: auto;
-              height: auto;
-              display: block;
-              margin: 0 auto;
-            "
-          />
-          <span class="card-title my-3" style="display: block">{{
-            product.titles
-          }}</span>
-          <span
-            class="badge badge rounded-pill text-white"
-            [ngClass]="{
-              'bg-warning': product.site == 'amazon',
-              'bg-primary': product.site == 'flipkart',
-              'bg-success': product.site == 'reliance',
-              'bg-dark': product.site == 'shopclues'
-            }"
-            style="
-              margin-right: 1rem;
-              font-size: 1rem;
-              font-weight: 400;
-              width: 6rem;
-              display: inline-block;
-            "
-            >{{ product.site }}</span
+
+      <div style="width: 20rem" class="p-3">
+        <img
+          class="p-3"
+          src="{{ product.imgs }}"
+          alt="{{ product.titles }}"
+          loading="lazy"
+          style="
+            max-width: 100px;
+            max-height: 150px;
+            width: auto;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+          "
+        />
+        <span class="card-title my-3" style="display: block">{{
+          product.titles
+        }}</span>
+        <span
+          class="badge badge rounded-pill text-white"
+          [ngClass]="{
+            'bg-warning': product.site == 'amazon',
+            'bg-primary': product.site == 'flipkart',
+            'bg-success': product.site == 'reliance',
+            'bg-dark': product.site == 'shopclues'
+          }"
+          style="
+            margin-right: 1rem;
+            font-size: 1rem;
+            font-weight: 400;
+            width: 6rem;
+            display: inline-block;
+          "
+          >{{ product.site }}</span
+        >
+        <span
+          class="card-text my-2"
+          style="color: #379237; font-size: 1.3rem"
+          >{{ "₹" + product.prices }}</span
+        >
+        <div style="width: 15rem" class="mx-auto">
+          <a
+            style="display: inline-block; padding: 0.3rem; margin-top: -1px"
+            class="btn btn-primary ms-2 mt-3"
+            (click)="onClickViewPriceHistory(product, this.results)"
+            >View price history</a
           >
-          <span
-            class="card-text my-2"
-            style="color: #379237; font-size: 1.3rem"
-            >{{ "₹" + product.prices }}</span
+        </div>
+        <div style="width: 15rem" class="mx-auto">
+          <a
+            style="display: inline-block; padding: 0.3rem; margin-top: -1px"
+            class="btn btn-primary ms-2 mt-3"
+            href="{{ product.urls }}"
+            >Buy Product</a
           >
-          <div style="width: 15rem" class="mx-auto">
-            <a
-              style="display: inline-block; padding: 0.3rem; margin-top: -1px"
-              class="btn btn-primary ms-2 mt-3"
-              (click)="onClickViewPriceHistory(product, this.results)"
-              >View price history</a
-            >
-          </div>
-          <div style="width: 15rem" class="mx-auto">
-            <a
-              style="display: inline-block; padding: 0.3rem; margin-top: -1px"
-              class="btn btn-primary ms-2 mt-3"
-              href="{{ product.urls }}"
-              >Buy Product</a
-            >
-          </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="d-flex justify-content-center my-3">
-      <pagination-controls
-        [maxSize]="9"
-        (pageChange)="p = $event"
-      ></pagination-controls>
-    </div>
+  <div class="d-flex justify-content-center my-3">
+    <pagination-controls
+      [maxSize]="9"
+      (pageChange)="p = $event"
+    ></pagination-controls>
   </div>
 </div>
 

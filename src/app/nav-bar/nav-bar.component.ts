@@ -10,6 +10,7 @@ export class NavBarComponent implements OnInit {
   constructor(private _router: Router) {}
 
   ngOnInit(): void {}
+  isUserLoggedIn = localStorage.getItem('isUserLoggedIn');
   collapsed = true;
   toggleCollapsed(): void {
     this.collapsed = !this.collapsed;

@@ -58,12 +58,22 @@
           class="nav-item"
           style="margin-right: 10px"
         >
-          <a
-            routerLink="/login"
-            (click)="onNavLinkClick('/login')"
-            class="nav-link"
-            >Login</a
-          >
+          <div *ngIf="isUserLoggedIn == 'false'">
+            <a
+              routerLink="/login"
+              (click)="onNavLinkClick('/login')"
+              class="nav-link"
+              >Login</a
+            >
+          </div>
+          <div *ngIf="isUserLoggedIn == 'true'">
+            <a
+              routerLink="/logout"
+              (click)="onNavLinkClick('/signout')"
+              class="nav-link"
+              >Logout</a
+            >
+          </div>
         </li>
         <div ngbDropdown class="d-inline-block">
           <button

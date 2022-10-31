@@ -19,6 +19,7 @@ const routes: Routes = [
   { path: 'login', component: LoginPageComponent },
   { path: 'logout', component: LogoutPageComponent },
   { path: 'signup', component: SignUpComponent },
+  { path: 'logout', component: LogoutPageComponent },
   { path: 'price-info', component: PriceInfoPageComponent },
   { path: '**', component: NotFoundPageComponent },
 ];

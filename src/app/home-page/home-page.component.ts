@@ -31,9 +31,15 @@ export class HomePageComponent implements OnInit {
   ) {
     title.setTitle('Home - Trhifty');
   }
-
+  shuffleArray(arr: any[]) {
+    const res = [];
+    while (arr.length) {
+      res.push(arr.splice(~~(Math.random() * arr.length), 1)[0]);
+    }
+    return res;
+  }
   ngOnInit(): void {
-    // this.developmentAutoClick();
+    this.developmentAutoClick();
     this.activatedRoute.queryParams.subscribe((params: Params) => {
       if (Object.keys(params).length === 0) {
         console.log('no params found');
@@ -53,44 +59,27 @@ export class HomePageComponent implements OnInit {
   }
 
   developmentAutoClick() {
-    this.gotError = false;
-    this.results = [];
-    this.displayLoadingAnimation = true;
-    var local_url = 'http://localhost:8080/results?data=iphone';
-    var url = 'https://thrifty-one.vercel.app/results?product=iphone';
-    this.api.getProducts(local_url).subscribe({
-      next: (products) => {
-        this.results = products;
-        console.log(products);
-        this.resultsLoaded = true;
-        this.hideSectionAnimations = true;
-        this.displayLoadingAnimation = false; // turn off loading animation
-      },
-      error: (error) => {
-        console.log('oops', error);
-        this.gotError = true;
-        this.hideSectionAnimations = true;
-        this.displayLoadingAnimation = false;
-      },
-    });
+    this.onClickSearch();
+    this.fetchProducts('iphone');
   }
 
   onClickSearch() {
     this.gotError = false;
-
     console.log('User entered: ' + this.search_product.value);
-    // display loading animation
-    this.displayLoadingAnimation = true;
+    this.displayLoadingAnimation = true; // display loading animation
     // Access API and display the products
-    var local_url =
-      'http://localhost:8080/results?data=' +
-      this.search_product.value?.replace(' ', '_');
-    var url = this.apiUrl + this.search_product.value?.replace(' ', '_');
+    this.fetchProducts(this.search_product.value);
+  }
+
+  fetchProducts(item: string | null) {
+    this.productName != item;
+    let url = this.apiUrl + item?.replace(' ', '_');
     this.api.getProducts(url).subscribe({
       next: (products) => {
         this.results = [];
         this.results = products;
-        console.log(products);
+        this.results = this.shuffleArray(this.results);
+        console.log(this.results);
         this.resultsLoaded = true;
         this.hideSectionAnimations = true;
         this.displayLoadingAnimation = false; // turn off loading animation
@@ -113,28 +102,3 @@ export class HomePageComponent implements OnInit {
     this.router.navigate(['/price-info']);
   }
 }
-/* 
-
-[{
-  "site": "amazon",
-  "titles": "Price and other details may vary based on data size and colour.",
-  "prices": "197",
-  "urls": "https://www.amazon.in/Hello-Sunblock-Lotion-Sunscreen-120ml/dp/B0854749FD/ref=sr_1_2?keywords=hello&qid=1666252790&qu=eyJxc2MiOiI1Ljc2IiwicXNhIjoiNC44MyIsInFzcCI6IjAuMDAifQ%3D%3D&sr=8-2",
-  "imgs": "https://m.media-amazon.com/images/I/71R8ETeC-gL._AC_UL320_.jpg"
-} ,
-{
-  "site": "amazon",
-  "titles": "Price and other details may vary based on data size and colour.",
-  "prices": "197",
-  "urls": "https://www.amazon.in/Hello-Sunblock-Lotion-Sunscreen-120ml/dp/B0854749FD/ref=sr_1_2?keywords=hello&qid=1666252790&qu=eyJxc2MiOiI1Ljc2IiwicXNhIjoiNC44MyIsInFzcCI6IjAuMDAifQ%3D%3D&sr=8-2",
-  "imgs": "https://m.media-amazon.com/images/I/71R8ETeC-gL._AC_UL320_.jpg"
-} ,
-{
-  "site": "amazon",
-  "titles": "Price and other details may vary based on data size and colour.",
-  "prices": "197",
-  "urls": "https://www.amazon.in/Hello-Sunblock-Lotion-Sunscreen-120ml/dp/B0854749FD/ref=sr_1_2?keywords=hello&qid=1666252790&qu=eyJxc2MiOiI1Ljc2IiwicXNhIjoiNC44MyIsInFzcCI6IjAuMDAifQ%3D%3D&sr=8-2",
-  "imgs": "https://m.media-amazon.com/images/I/71R8ETeC-gL._AC_UL320_.jpg"
-} ]
-
-*/

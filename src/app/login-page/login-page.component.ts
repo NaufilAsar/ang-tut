@@ -36,6 +36,7 @@ export class LoginPageComponent implements OnInit {
       password: new FormControl('', Validators.required),
     });
   }
+
   wait(ms: number) {
     var start = new Date().getTime();
     var end = start;
@@ -49,13 +50,16 @@ export class LoginPageComponent implements OnInit {
   displayStyle = 'none';
 
   openPopup() {
-    this.displayStyle = 'block';
+    if (!this.loginForm.invalid) this.displayStyle = 'block';
   }
   closePopup() {
     this.displayStyle = 'none';
   }
   loginUser() {
-    // if (this.loginForm.invalid) return;
+    if (this.loginForm.invalid) {
+      this.firebaseErrorMessage = 'Invalid Input';
+      return;
+    }
 
     this.authService
       .loginUser(this.loginForm.value.email, this.loginForm.value.password)

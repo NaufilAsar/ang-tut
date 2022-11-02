@@ -10,6 +10,8 @@ import { AuthService } from '../services/auth.service';
   styleUrls: ['./sign-up.component.css'],
 })
 export class SignUpComponent implements OnInit {
+  displayStyleSuccess = 'none';
+  displayStyleError = 'none';
   firebaseErrorMessage: string = '';
   singUpSuccess: boolean = false;
   signupForm: FormGroup;
@@ -27,10 +29,13 @@ export class SignUpComponent implements OnInit {
   ngOnInit(): void {}
 
   signup() {
-    if (this.signupForm.invalid)
+    if (this.signupForm.invalid) {
       // if there's an error in the form, don't submit it
+      this.displayStyleError = 'block';
       return;
+    }
 
+    this.displayStyleSuccess = 'block';
     this.authService
       .signupUser(this.signupForm.value)
       .then((result) => {

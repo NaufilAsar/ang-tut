@@ -90,10 +90,10 @@
         </div>
       </div>
 
-      <ng-template #other_content class="d-flex justify-content-center mt-3">
-        <span class="alert alert-danger" role="alert">{{
-          "Error-" + firebaseErrorMessage
-        }}</span>
+      <ng-template #other_content class="d-flex justify-content-center">
+        <p class="alert alert-danger my-4 text-center" role="alert">
+          {{ "Error-" + firebaseErrorMessage }}
+        </p>
       </ng-template>
     </div>
   </form>

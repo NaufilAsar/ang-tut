@@ -1,5 +1,5 @@
 <div class="panel"></div>
-<div style="padding: 5%; width: 90%" class="card mx-auto mt-5">
+<div style="padding: 5%; width: 90%" class="card mx-auto my-5">
   <form [formGroup]="signupForm" (ngSubmit)="signup()" class="form-inline">
     <div class="d-flex justify-content-center mt-2">
       <h1 style="font-size: 3.5rem">Sign Up</h1>
@@ -37,4 +37,16 @@
       <a routerLink="/login" class="btn btn-outline-secondary btn-sm">Login</a>
     </div>
   </form>
+  <p
+    class="alert alert-success my-4 text-center"
+    [ngStyle]="{ display: displayStyleSuccess }"
+  >
+    New User Created.
+  </p>
+  <p
+    class="alert alert-danger my-4 text-center"
+    [ngStyle]="{ display: displayStyleError }"
+  >
+    Invalid Input.
+  </p>
 </div>

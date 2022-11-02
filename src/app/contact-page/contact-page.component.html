@@ -17,12 +17,17 @@
             </p>
           </div>
 
-          <form id="contact_form" action="mailto:naufilasar9028@gmail.com">
+          <form
+            [formGroup]="emailForm"
+            (ngSubmit)="sendEmail()"
+            id="contact_form"
+          >
             <div
               class="contact_form_inputs d-flex flex-md-row flex-column justify-content-between align-items-between"
             >
               <input
                 type="text"
+                [formControl]="name"
                 name="name"
                 id="contact_form_name"
                 class="contact_form_name input_field text-secondary cool-box-shadow"
@@ -31,6 +36,7 @@
                 data-error="Name is required."
               />
               <input
+                [formControl]="email"
                 type="email"
                 name="email"
                 id="contact_form_email"
@@ -40,14 +46,16 @@
                 data-error="Email is required."
               />
               <input
+                [formControl]="subject"
                 type="text"
                 id="contact_form_phone"
                 class="contact_form_phone input_field text-secondary cool-box-shadow"
-                placeholder="Your phone number"
+                placeholder="Subject"
               />
             </div>
             <div class="contact_form_text">
               <textarea
+                [formControl]="body"
                 id="contact_form_message"
                 class="text_field contact_form_message text-secondary cool-box-shadow"
                 name="message"
@@ -62,15 +70,17 @@
               style="margin-top: 30px"
             >
               <button type="submit" class="btn btn-warning px-2 mt-4">
-                <a
-                  href="mailto:naufilasar9028@gmail.com"
-                  class="text-dark text-decoration-none"
-                >
-                  Send Message
-                </a>
+                <a class="text-dark text-decoration-none"> Send Message </a>
               </button>
             </div>
           </form>
+          <p
+            id="Msg"
+            class="alert alert-success my-4 text-center"
+            [ngStyle]="{ display: displayStyle }"
+          >
+            Message Sent.
+          </p>
         </div>
       </div>
     </div>

@@ -9,6 +9,7 @@ import { Title } from '@angular/platform-browser';
   styleUrls: ['./price-info-page.component.css'],
 })
 export class PriceInfoPageComponent implements OnInit {
+  suggestions: any = [];
   product: any;
   lineChartData: ChartConfiguration<'line'>['data'];
   lineChartOptions: ChartOptions<'line'>;
@@ -50,9 +51,14 @@ export class PriceInfoPageComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log(this.product);
     this.product = JSON.parse(localStorage.getItem('product') as string);
     console.log(this.product);
+
+    this.suggestions = JSON.parse(
+      localStorage.getItem('suggestions') as string
+    );
+    console.log('Suggestions' + this.suggestions);
+
     let currentMonth = new Date().toLocaleString('en-us', { month: 'long' });
     let currentMonthNumber = new Date().getMonth() + 1;
     // get current month and display prices till the current month
@@ -66,7 +72,7 @@ export class PriceInfoPageComponent implements OnInit {
   onChartHover() {}
   calculatePricesForMonth() {
     let price = parseInt(
-      this.product.prices.toLocaleString().replace('₹', '').replace(',', '')
+      this.product.price.toLocaleString().replace('₹', '').replace(',', '')
     );
     console.log(typeof price);
     let result = this.months; // priceData

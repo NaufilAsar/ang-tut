@@ -15,6 +15,7 @@ export class HomePageComponent implements OnInit {
   search_product = new FormControl(''); // search bar
   search_icon = faMagnifyingGlass; // search icon
   apiUrl = 'https://tender-grass-55002.pktriot.net/results?product=';
+  // apiUrl = 'https://thrifty-one.vercel.app/results?product=';
   displayLoadingAnimation = false;
   resultsLoaded = false; // change to true when results loaded from API
   hideSectionAnimations = this.resultsLoaded;
@@ -46,7 +47,7 @@ export class HomePageComponent implements OnInit {
   resolveIfCategoryFound(): void {
     this.activatedRoute.queryParams.subscribe((params: Params) => {
       if (Object.keys(params).length === 0) {
-        console.log('no params found');
+        console.log('no default params found');
       } else {
         this.productName = 'Category ' + params['category'];
         // reslove params
@@ -81,7 +82,6 @@ export class HomePageComponent implements OnInit {
           }
           this.displayLoadingAnimation = false;
           for (let i = 0; i < categoryArray.length; i++) {
-            console.log(categoryArray);
             if (i == 0) this.fetchProducts(categoryArray[i], true, true);
             this.fetchProducts(categoryArray[i], true, false);
           }
@@ -114,6 +114,7 @@ export class HomePageComponent implements OnInit {
     let url = this.apiUrl + item?.replace(' ', '_');
     this.api.getProducts(url).subscribe({
       next: (products) => {
+        console.log(products);
         if (!ifCategory) this.productName = item;
         if (!ifCategory || refeshCategory) {
           this.results = []; // initialize array of products
@@ -121,21 +122,21 @@ export class HomePageComponent implements OnInit {
         } else this.results.push(products); // if it is a category then refill it since it uses same function more than once
         this.results = this.results.filter((x: any) => {
           return (
-            x.imgs != undefined &&
-            x.titles != undefined &&
+            x.img != undefined &&
+            x.title != undefined &&
             x.site != undefined &&
-            x.prices != undefined &&
-            x.urls != undefined
+            x.price != undefined &&
+            x.url != undefined
           );
         });
         this.results = this.shuffleArray(this.results);
-        console.log(this.results);
+        console.log('Fetched ' + this.results.length + ' results');
         this.resultsLoaded = true;
         this.hideSectionAnimations = true;
         this.displayLoadingAnimation = false; // turn off loading animation
       },
       error: (error) => {
-        console.log('oops', error);
+        console.log('oops: ', error);
         this.gotError = true;
         this.hideSectionAnimations = true;
         this.displayLoadingAnimation = false;
@@ -147,8 +148,12 @@ export class HomePageComponent implements OnInit {
     console.log(data);
     // save product to local storage
     localStorage.setItem('product', JSON.stringify(data));
+    localStorage.setItem('suggestions', JSON.stringify(suggestions));
     let indexes = this.results[Math.floor(Math.random() * this.results.length)];
     console.log(this.results);
     this.router.navigate(['/price-info']);
+  }
+  showSuggestions(): Object[] {
+    return [this.results[1], this.results[3], this.results[4], this.results[7]];
   }
 }

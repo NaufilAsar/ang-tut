@@ -73,8 +73,8 @@
       <div style="width: 20rem" class="p-3">
         <img
           class="p-3"
-          src="{{ product.imgs }}"
-          alt="{{ product.titles }}"
+          src="{{ product.img }}"
+          alt="{{ product.title }}"
           loading="lazy"
           style="
             max-width: 100px;
@@ -86,7 +86,7 @@
           "
         />
         <span class="card-title my-3" style="display: block">{{
-          product.titles
+          product.title
         }}</span>
         <span
           class="badge badge rounded-pill text-white"
@@ -108,13 +108,13 @@
         <span
           class="card-text my-2"
           style="color: #379237; font-size: 1.3rem"
-          >{{ "₹" + product.prices }}</span
+          >{{ "₹" + product.price }}</span
         >
         <div style="width: 15rem" class="mx-auto">
           <a
             style="display: inline-block; padding: 0.3rem; margin-top: -1px"
             class="btn btn-primary ms-2 mt-3"
-            (click)="onClickViewPriceHistory(product, this.results)"
+            (click)="onClickViewPriceHistory(product, this.showSuggestions())"
             >View price history</a
           >
         </div>
@@ -122,7 +122,7 @@
           <a
             style="display: inline-block; padding: 0.3rem; margin-top: -1px"
             class="btn btn-primary ms-2 mt-3"
-            href="{{ product.urls }}"
+            href="{{ product.url }}"
             >Buy Product</a
           >
         </div>

@@ -60,17 +60,16 @@ export class LoginPageComponent implements OnInit {
     this.authService
       .loginUser(this.loginForm.value.email, this.loginForm.value.password)
       .then((result) => {
+        console.log('Log status' + this.authService.userLoggedIn);
         if (result == null) {
           // null is success, false means there was an error
           console.log('logging in...');
-          localStorage.setItem('isUserLoggedIn', 'true');
           // show a pop up
           // wait
-          this.wait(2000); // 2 seconds
+          this.wait(400); // 4 miliseconds
           this.router.navigate(['/home']); // when the user is logged in, navigate them to dashboard
         } else if (result.isValid == false) {
           console.log('login error', result);
-          localStorage.setItem('isUserLoggedIn', 'false');
           this.firebaseErrorMessage = result.message;
         }
       });

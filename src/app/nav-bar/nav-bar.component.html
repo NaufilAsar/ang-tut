@@ -58,20 +58,20 @@
           class="nav-item"
           style="margin-right: 10px"
         >
-          <div *ngIf="isUserLoggedIn == 'false' || isUserLoggedIn == null">
-            <a
-              routerLink="/login"
-              (click)="onNavLinkClick('/login')"
-              class="nav-link"
-              >Login</a
-            >
-          </div>
-          <div *ngIf="isUserLoggedIn == 'true'">
+          <div *ngIf="authService.userLoggedIn">
             <a
               routerLink="/logout"
               (click)="onNavLinkClick('/signout')"
               class="nav-link"
               >Logout</a
+            >
+          </div>
+          <div *ngIf="!authService.userLoggedIn">
+            <a
+              routerLink="/login"
+              (click)="onNavLinkClick('/login')"
+              class="nav-link"
+              >Login</a
             >
           </div>
         </li>

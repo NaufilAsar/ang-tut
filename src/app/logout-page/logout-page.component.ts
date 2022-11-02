@@ -58,7 +58,9 @@ export class LogoutPageComponent implements OnInit {
     this.router.navigate(['login']);
   }
   logoutUser() {
-    if (localStorage.getItem('isUserLoggedIn') == 'true') {
+    console.log('Log status' + localStorage.getItem('isUserLoggedIn'));
+
+    if (this.authService.userLoggedIn) {
       this.authService.logoutUser();
       this.openPopup();
     }

@@ -66,7 +66,7 @@ export class LoginPageComponent implements OnInit {
           localStorage.setItem('isUserLoggedIn', 'true');
           // show a pop up
           // wait
-          this.wait(5000); // 5 seconds
+          this.wait(2000); // 2 seconds
           this.router.navigate(['/home']); // when the user is logged in, navigate them to dashboard
         } else if (result.isValid == false) {
           console.log('login error', result);

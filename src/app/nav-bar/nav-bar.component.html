@@ -58,7 +58,7 @@
           class="nav-item"
           style="margin-right: 10px"
         >
-          <div *ngIf="isUserLoggedIn == 'false'">
+          <div *ngIf="isUserLoggedIn == 'false' || isUserLoggedIn == null">
             <a
               routerLink="/login"
               (click)="onNavLinkClick('/login')"

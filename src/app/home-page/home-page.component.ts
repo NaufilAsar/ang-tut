@@ -14,13 +14,13 @@ export class HomePageComponent implements OnInit {
   p: number = 1;
   search_product = new FormControl(''); // search bar
   search_icon = faMagnifyingGlass; // search icon
-  apiUrl = 'https://thrifty-one.vercel.app/results?product=';
+  apiUrl = 'https://tender-grass-55002.pktriot.net/results?product=';
   displayLoadingAnimation = false;
   resultsLoaded = false; // change to true when results loaded from API
   hideSectionAnimations = this.resultsLoaded;
   gotError = false; // if error when loading results
-  results: any;
-  usingParams = false;
+  results: any; // store product info from API
+  usingParams = false; // whether using parameters in link (for category)
   productName: string | null = '';
 
   constructor(
@@ -79,11 +79,13 @@ export class HomePageComponent implements OnInit {
           } else if (params['category'] === 'Health') {
             categoryArray = ['Protein Powder', 'Dumbells', 'Sportswear'];
           }
+          this.displayLoadingAnimation = false;
           for (let i = 0; i < categoryArray.length; i++) {
             console.log(categoryArray);
             if (i == 0) this.fetchProducts(categoryArray[i], true, true);
             this.fetchProducts(categoryArray[i], true, false);
           }
+          this.displayLoadingAnimation = true;
         }
       }
     });
@@ -103,6 +105,7 @@ export class HomePageComponent implements OnInit {
     this.productName != this.search_product.value;
   }
 
+  // use server api link to search products
   fetchProducts(
     item: string | null,
     ifCategory: Boolean = false,
@@ -113,9 +116,9 @@ export class HomePageComponent implements OnInit {
       next: (products) => {
         if (!ifCategory) this.productName = item;
         if (!ifCategory || refeshCategory) {
-          this.results = [];
+          this.results = []; // initialize array of products
           this.results = products;
-        } else this.results.push(products);
+        } else this.results.push(products); // if it is a category then refill it since it uses same function more than once
         this.results = this.results.filter((x: any) => {
           return (
             x.imgs != undefined &&

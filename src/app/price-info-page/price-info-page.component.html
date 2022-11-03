@@ -63,6 +63,7 @@
     Create a price drop email alert for this product:
   </h3>
   <input
+    formControlName="email"
     type="email"
     name="email"
     id="contact_form_email"
@@ -70,7 +71,24 @@
     placeholder="Your email"
     required="required"
     data-error="Email is required."
+    onkeydown="onBtnClick(event)"
   />
+  <button
+    id="search_btn"
+    type="button"
+    (click)="onBtnClick()"
+    class="btn btn-warning m-2 cool-box-shadow"
+    style="padding: 0.6rem 1.1rem"
+  >
+    <fa-icon [icon]="arrow_icon"></fa-icon>
+  </button>
+  <p
+    [ngStyle]="{ display: displayStyle }"
+    class="alert alert-success mx-auto my-2"
+    style="font-family: 'Poppins'; width: fit-content"
+  >
+    Done! We will send you an email once price for this product drops.
+  </p>
   <hr />
 </div>
 

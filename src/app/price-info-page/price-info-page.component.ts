@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { NgChartsModule } from 'ng2-charts';
 import { ChartConfiguration, ChartOptions, ChartType } from 'chart.js';
 import { Title } from '@angular/platform-browser';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-price-info-page',
@@ -9,6 +11,9 @@ import { Title } from '@angular/platform-browser';
   styleUrls: ['./price-info-page.component.css'],
 })
 export class PriceInfoPageComponent implements OnInit {
+  email = new FormControl('');
+  arrow_icon = faArrowRight;
+  displayStyle = 'none';
   suggestions: any = [];
   product: any;
   lineChartData: ChartConfiguration<'line'>['data'];
@@ -48,6 +53,10 @@ export class PriceInfoPageComponent implements OnInit {
       responsive: true,
     };
     this.lineChartLegend = true;
+  }
+
+  onBtnClick() {
+    this.displayStyle = 'block';
   }
 
   ngOnInit(): void {

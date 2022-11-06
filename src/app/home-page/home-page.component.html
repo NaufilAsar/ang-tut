@@ -70,7 +70,7 @@
     >
       <!-- Display only complete info products -->
 
-      <div style="width: 20rem" class="p-3">
+      <div style="width: 20rem" id="productArray" class="p-3">
         <img
           class="p-3"
           src="{{ product.img }}"
@@ -85,9 +85,11 @@
             margin: 0 auto;
           "
         />
-        <span class="card-title my-3" style="display: block">{{
-          product.title
-        }}</span>
+        <span
+          class="card-title my-3"
+          style="display: block; overflow: hidden"
+          >{{ product.title }}</span
+        >
         <span
           class="badge badge rounded-pill text-white"
           [ngClass]="{

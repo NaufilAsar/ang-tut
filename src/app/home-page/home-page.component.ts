@@ -14,8 +14,11 @@ export class HomePageComponent implements OnInit {
   p: number = 1;
   search_product = new FormControl(''); // search bar
   search_icon = faMagnifyingGlass; // search icon
-  apiUrl = 'https://tender-grass-55002.pktriot.net/results?product=';
+  // apiUrl = 'https://tender-grass-55002.pktriot.net/results?product=';
   // apiUrl = 'https://thrifty-one.vercel.app/results?product=';
+  apiUrl = 'https://temp-api-alpha.vercel.app/results?product=bottle';
+  // apiUrl = 'https://thrifty-cru0kxegs-dark-kernel.vercel.app/results?product=bat';
+  // apiUrl = 'https://thrifty-h2okttvns-dark-kernel.vercel.app/results?product=watch';
   displayLoadingAnimation = false;
   resultsLoaded = false; // change to true when results loaded from API
   hideSectionAnimations = this.resultsLoaded;
@@ -117,6 +120,19 @@ export class HomePageComponent implements OnInit {
         console.log(products);
         if (!ifCategory) this.productName = item;
         if (!ifCategory || refeshCategory) {
+          // console.log(
+          //   'Here: ' +
+          //     document.getElementById('productArray')?.firstElementChild
+          // );
+          let e = document.getElementById('productArray');
+
+          //e.firstElementChild can be used.
+          let child = e?.lastElementChild;
+          while (child) {
+            e?.removeChild(child);
+            child = e?.lastElementChild;
+          }
+
           this.results = []; // initialize array of products
           this.results = products;
         } else this.results.push(products); // if it is a category then refill it since it uses same function more than once
